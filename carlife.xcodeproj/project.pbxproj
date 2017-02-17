@@ -1,0 +1,1371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F6100AA1E502948008C7E7B /* SKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6100A91E502948008C7E7B /* SKSettingViewController.m */; };
+		0F6100AF1E509059008C7E7B /* SKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6100AE1E509059008C7E7B /* SKAlertViewController.m */; };
+		0F6100B11E5091A3008C7E7B /* alertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F6100B01E5091A3008C7E7B /* alertView.storyboard */; };
+		0F6100B41E509A3F008C7E7B /* SKAlertViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6100B31E509A3F008C7E7B /* SKAlertViewCell.m */; };
+		3314FC471E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3314FC461E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m */; };
+		3314FC491E28B72100DDCDB3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3314FC481E28B72100DDCDB3 /* Info.plist */; };
+		331E5A991E4C069C0022B83B /* SKHomeCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 331E5A981E4C069C0022B83B /* SKHomeCollectionViewLayout.m */; };
+		331E5A9C1E4C0D7D0022B83B /* SKHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 331E5A9B1E4C0D7D0022B83B /* SKHomeModel.m */; };
+		331E5A9F1E4C595B0022B83B /* SKHomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331E5A9E1E4C595B0022B83B /* SKHomeViewCell.m */; };
+		331E5AA21E4C746D0022B83B /* SKHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 331E5AA11E4C746D0022B83B /* SKHomeHeaderView.m */; };
+		3335E98B1E4B01B8008DA7C6 /* SKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3335E98A1E4B01B8008DA7C6 /* SKHomeViewController.m */; };
+		3335E98E1E4B0DB2008DA7C6 /* SKDeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3335E98D1E4B0DB2008DA7C6 /* SKDeviceListViewController.m */; };
+		3335E9911E4B0DE6008DA7C6 /* SKMonitorCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3335E9901E4B0DE6008DA7C6 /* SKMonitorCenterViewController.m */; };
+		3335E9941E4B0E1F008DA7C6 /* SKMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3335E9931E4B0E1F008DA7C6 /* SKMessageCenterViewController.m */; };
+		3335E9971E4B21E7008DA7C6 /* SKHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3335E9961E4B21E7008DA7C6 /* SKHomeView.m */; };
+		33586A981E513F8B00B97113 /* SKElectronicBarrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33586A971E513F8B00B97113 /* SKElectronicBarrierViewController.m */; };
+		33586A9B1E51411900B97113 /* SKRealTimeLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33586A9A1E51411900B97113 /* SKRealTimeLocationViewController.m */; };
+		338A9FE81E49B7B50095F17D /* SKLoginOptionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 338A9FE71E49B7B50095F17D /* SKLoginOptionViewCell.m */; };
+		3397F7281E5306EB00E6CCEC /* SKHistoryPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397F7271E5306EB00E6CCEC /* SKHistoryPathViewController.m */; };
+		3397F72B1E53089E00E6CCEC /* SKHistoryPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397F72A1E53089E00E6CCEC /* SKHistoryPathView.m */; };
+		33B6EFA11E24BFBE008A77AC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B6EF881E24BFBE008A77AC /* LoginViewController.m */; };
+		33B6EFA21E24BFBE008A77AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B6EF961E24BFBE008A77AC /* AppDelegate.m */; };
+		33B6EFA31E24BFBE008A77AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B6EF981E24BFBE008A77AC /* LaunchScreen.storyboard */; };
+		33B6EFA41E24BFBE008A77AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B6EF9A1E24BFBE008A77AC /* Main.storyboard */; };
+		33B6EFA51E24BFBE008A77AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B6EF9C1E24BFBE008A77AC /* main.m */; };
+		33B6EFA61E24BFBE008A77AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33B6EF9E1E24BFBE008A77AC /* Assets.xcassets */; };
+		33CA66B91E54019400727719 /* SKNearbyNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66B81E54019400727719 /* SKNearbyNavigationViewController.m */; };
+		33CA66BC1E54052E00727719 /* SKNearbyNavigationViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66BB1E54052E00727719 /* SKNearbyNavigationViewCell.m */; };
+		33CA66BF1E5428C600727719 /* SKNearbyViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66BE1E5428C600727719 /* SKNearbyViewFlowLayout.m */; };
+		33CA66C51E542CC700727719 /* SKNearbyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66C41E542CC700727719 /* SKNearbyModel.m */; };
+		33CA66C81E544D8200727719 /* SKOfflineMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66C71E544D8100727719 /* SKOfflineMapViewController.m */; };
+		33CA66CE1E5455FF00727719 /* SKOfflineMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66CD1E5455FF00727719 /* SKOfflineMapView.m */; };
+		33CA66D11E55575C00727719 /* SKMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66D01E55575C00727719 /* SKMap.m */; };
+		33CA66D41E5578B000727719 /* SKCityViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66D31E5578B000727719 /* SKCityViewCell.m */; };
+		33CA66D71E557AE400727719 /* SKCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66D61E557AE400727719 /* SKCityModel.m */; };
+		33CA66DA1E55A7E500727719 /* SKDownloadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66D91E55A7E500727719 /* SKDownloadViewCell.m */; };
+		33ECEBAB1E275D2E00AEEDEC /* SKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ECEBAA1E275D2E00AEEDEC /* SKNavigationController.m */; };
+		33ECEBAE1E275D5B00AEEDEC /* SKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ECEBAD1E275D5B00AEEDEC /* SKTabBarController.m */; };
+		33F35EAF1E4DAFEF000960EE /* SKMessageCenterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F35EAE1E4DAFEF000960EE /* SKMessageCenterViewCell.m */; };
+		33F35EB21E4DB806000960EE /* SKMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F35EB11E4DB806000960EE /* SKMessageModel.m */; };
+		33FDEC191E25DA4A006CCC94 /* SKLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDEC181E25DA4A006CCC94 /* SKLoginView.m */; };
+		33FDEC271E2634B6006CCC94 /* SKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDEC261E2634B6006CCC94 /* SKBaseViewController.m */; };
+		477960AEACD4FE5EEF077AA7 /* libPods-carlife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C87C88D957E9042FD712ABC1 /* libPods-carlife.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F6100A81E502948008C7E7B /* SKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSettingViewController.h; sourceTree = "<group>"; };
+		0F6100A91E502948008C7E7B /* SKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSettingViewController.m; sourceTree = "<group>"; };
+		0F6100AD1E509059008C7E7B /* SKAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAlertViewController.h; sourceTree = "<group>"; };
+		0F6100AE1E509059008C7E7B /* SKAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAlertViewController.m; sourceTree = "<group>"; };
+		0F6100B01E5091A3008C7E7B /* alertView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = alertView.storyboard; sourceTree = "<group>"; };
+		0F6100B21E509A3F008C7E7B /* SKAlertViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAlertViewCell.h; sourceTree = "<group>"; };
+		0F6100B31E509A3F008C7E7B /* SKAlertViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAlertViewCell.m; sourceTree = "<group>"; };
+		329C7A16C5C684AE80C86B90 /* Pods-carlife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carlife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-carlife/Pods-carlife.debug.xcconfig"; sourceTree = "<group>"; };
+		3314FC451E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+SKProperties.h"; sourceTree = "<group>"; };
+		3314FC461E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GVUserDefaults+SKProperties.m"; sourceTree = "<group>"; };
+		3314FC481E28B72100DDCDB3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		331E5A971E4C069C0022B83B /* SKHomeCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHomeCollectionViewLayout.h; sourceTree = "<group>"; };
+		331E5A981E4C069C0022B83B /* SKHomeCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKHomeCollectionViewLayout.m; sourceTree = "<group>"; };
+		331E5A9A1E4C0D7D0022B83B /* SKHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHomeModel.h; sourceTree = "<group>"; };
+		331E5A9B1E4C0D7D0022B83B /* SKHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKHomeModel.m; sourceTree = "<group>"; };
+		331E5A9D1E4C595B0022B83B /* SKHomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHomeViewCell.h; sourceTree = "<group>"; };
+		331E5A9E1E4C595B0022B83B /* SKHomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKHomeViewCell.m; sourceTree = "<group>"; };
+		331E5AA01E4C746D0022B83B /* SKHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHomeHeaderView.h; sourceTree = "<group>"; };
+		331E5AA11E4C746D0022B83B /* SKHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKHomeHeaderView.m; sourceTree = "<group>"; };
+		3335E9891E4B01B8008DA7C6 /* SKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHomeViewController.h; sourceTree = "<group>"; };
+		3335E98A1E4B01B8008DA7C6 /* SKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKHomeViewController.m; sourceTree = "<group>"; };
+		3335E98C1E4B0DB2008DA7C6 /* SKDeviceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDeviceListViewController.h; sourceTree = "<group>"; };
+		3335E98D1E4B0DB2008DA7C6 /* SKDeviceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDeviceListViewController.m; sourceTree = "<group>"; };
+		3335E98F1E4B0DE6008DA7C6 /* SKMonitorCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMonitorCenterViewController.h; sourceTree = "<group>"; };
+		3335E9901E4B0DE6008DA7C6 /* SKMonitorCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMonitorCenterViewController.m; sourceTree = "<group>"; };
+		3335E9921E4B0E1F008DA7C6 /* SKMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMessageCenterViewController.h; sourceTree = "<group>"; };
+		3335E9931E4B0E1F008DA7C6 /* SKMessageCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMessageCenterViewController.m; sourceTree = "<group>"; };
+		3335E9951E4B21E7008DA7C6 /* SKHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHomeView.h; sourceTree = "<group>"; };
+		3335E9961E4B21E7008DA7C6 /* SKHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKHomeView.m; sourceTree = "<group>"; };
+		33586A961E513F8B00B97113 /* SKElectronicBarrierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKElectronicBarrierViewController.h; sourceTree = "<group>"; };
+		33586A971E513F8B00B97113 /* SKElectronicBarrierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKElectronicBarrierViewController.m; sourceTree = "<group>"; };
+		33586A991E51411900B97113 /* SKRealTimeLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRealTimeLocationViewController.h; sourceTree = "<group>"; };
+		33586A9A1E51411900B97113 /* SKRealTimeLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRealTimeLocationViewController.m; sourceTree = "<group>"; };
+		338A9FE61E49B7B50095F17D /* SKLoginOptionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKLoginOptionViewCell.h; sourceTree = "<group>"; };
+		338A9FE71E49B7B50095F17D /* SKLoginOptionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLoginOptionViewCell.m; sourceTree = "<group>"; };
+		3397F7261E5306EB00E6CCEC /* SKHistoryPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHistoryPathViewController.h; sourceTree = "<group>"; };
+		3397F7271E5306EB00E6CCEC /* SKHistoryPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKHistoryPathViewController.m; sourceTree = "<group>"; };
+		3397F7291E53089E00E6CCEC /* SKHistoryPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHistoryPathView.h; sourceTree = "<group>"; };
+		3397F72A1E53089E00E6CCEC /* SKHistoryPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKHistoryPathView.m; sourceTree = "<group>"; };
+		33B6EF331E24B6FF008A77AC /* carlife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carlife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B6EF871E24BFBE008A77AC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		33B6EF881E24BFBE008A77AC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		33B6EF951E24BFBE008A77AC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33B6EF961E24BFBE008A77AC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33B6EF991E24BFBE008A77AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33B6EF9B1E24BFBE008A77AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33B6EF9C1E24BFBE008A77AC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33B6EF9E1E24BFBE008A77AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33B6EFA81E24E069008A77AC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		33C4FF381E27238B009283D9 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		33C4FF391E272680009283D9 /* ThirdMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdMacros.h; sourceTree = "<group>"; };
+		33C4FF3A1E272744009283D9 /* TargetConfigMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetConfigMacros.h; sourceTree = "<group>"; };
+		33CA66B71E54019400727719 /* SKNearbyNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNearbyNavigationViewController.h; sourceTree = "<group>"; };
+		33CA66B81E54019400727719 /* SKNearbyNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNearbyNavigationViewController.m; sourceTree = "<group>"; };
+		33CA66BA1E54052E00727719 /* SKNearbyNavigationViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNearbyNavigationViewCell.h; sourceTree = "<group>"; };
+		33CA66BB1E54052E00727719 /* SKNearbyNavigationViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNearbyNavigationViewCell.m; sourceTree = "<group>"; };
+		33CA66BD1E5428C600727719 /* SKNearbyViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNearbyViewFlowLayout.h; sourceTree = "<group>"; };
+		33CA66BE1E5428C600727719 /* SKNearbyViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNearbyViewFlowLayout.m; sourceTree = "<group>"; };
+		33CA66C31E542CC700727719 /* SKNearbyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNearbyModel.h; sourceTree = "<group>"; };
+		33CA66C41E542CC700727719 /* SKNearbyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNearbyModel.m; sourceTree = "<group>"; };
+		33CA66C61E544D8100727719 /* SKOfflineMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKOfflineMapViewController.h; sourceTree = "<group>"; };
+		33CA66C71E544D8100727719 /* SKOfflineMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKOfflineMapViewController.m; sourceTree = "<group>"; };
+		33CA66CC1E5455FF00727719 /* SKOfflineMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKOfflineMapView.h; sourceTree = "<group>"; };
+		33CA66CD1E5455FF00727719 /* SKOfflineMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKOfflineMapView.m; sourceTree = "<group>"; };
+		33CA66CF1E55575C00727719 /* SKMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMap.h; sourceTree = "<group>"; };
+		33CA66D01E55575C00727719 /* SKMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMap.m; sourceTree = "<group>"; };
+		33CA66D21E5578B000727719 /* SKCityViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCityViewCell.h; sourceTree = "<group>"; };
+		33CA66D31E5578B000727719 /* SKCityViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCityViewCell.m; sourceTree = "<group>"; };
+		33CA66D51E557AE400727719 /* SKCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCityModel.h; sourceTree = "<group>"; };
+		33CA66D61E557AE400727719 /* SKCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCityModel.m; sourceTree = "<group>"; };
+		33CA66D81E55A7E500727719 /* SKDownloadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDownloadViewCell.h; sourceTree = "<group>"; };
+		33CA66D91E55A7E500727719 /* SKDownloadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDownloadViewCell.m; sourceTree = "<group>"; };
+		33ECEBA91E275D2E00AEEDEC /* SKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNavigationController.h; sourceTree = "<group>"; };
+		33ECEBAA1E275D2E00AEEDEC /* SKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNavigationController.m; sourceTree = "<group>"; };
+		33ECEBAC1E275D5B00AEEDEC /* SKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTabBarController.h; sourceTree = "<group>"; };
+		33ECEBAD1E275D5B00AEEDEC /* SKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTabBarController.m; sourceTree = "<group>"; };
+		33F35EAD1E4DAFEF000960EE /* SKMessageCenterViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMessageCenterViewCell.h; sourceTree = "<group>"; };
+		33F35EAE1E4DAFEF000960EE /* SKMessageCenterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMessageCenterViewCell.m; sourceTree = "<group>"; };
+		33F35EB01E4DB806000960EE /* SKMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMessageModel.h; sourceTree = "<group>"; };
+		33F35EB11E4DB806000960EE /* SKMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMessageModel.m; sourceTree = "<group>"; };
+		33FDEC171E25DA4A006CCC94 /* SKLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKLoginView.h; sourceTree = "<group>"; };
+		33FDEC181E25DA4A006CCC94 /* SKLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLoginView.m; sourceTree = "<group>"; };
+		33FDEC251E2634B6006CCC94 /* SKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBaseViewController.h; sourceTree = "<group>"; };
+		33FDEC261E2634B6006CCC94 /* SKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBaseViewController.m; sourceTree = "<group>"; };
+		6206BF356F004BD1783A406D /* Pods-carlife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carlife.release.xcconfig"; path = "Pods/Target Support Files/Pods-carlife/Pods-carlife.release.xcconfig"; sourceTree = "<group>"; };
+		C87C88D957E9042FD712ABC1 /* libPods-carlife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-carlife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33B6EF301E24B6FF008A77AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477960AEACD4FE5EEF077AA7 /* libPods-carlife.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13D2D7089D46758315E8A052 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				329C7A16C5C684AE80C86B90 /* Pods-carlife.debug.xcconfig */,
+				6206BF356F004BD1783A406D /* Pods-carlife.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1C0049EEE3393DF6B56D2AB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C87C88D957E9042FD712ABC1 /* libPods-carlife.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3314FC421E28AA9300DDCDB3 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		3314FC431E28AA9300DDCDB3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3314FC451E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.h */,
+				3314FC461E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3314FC441E28AA9300DDCDB3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		33B6EF2A1E24B6FF008A77AC = {
+			isa = PBXGroup;
+			children = (
+				33B6EF351E24B6FF008A77AC /* carlife */,
+				33B6EF341E24B6FF008A77AC /* Products */,
+				13D2D7089D46758315E8A052 /* Pods */,
+				1C0049EEE3393DF6B56D2AB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33B6EF341E24B6FF008A77AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF331E24B6FF008A77AC /* carlife.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33B6EF351E24B6FF008A77AC /* carlife */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF4D1E24BFBE008A77AC /* Class */,
+				33B6EF361E24B6FF008A77AC /* Supporting Files */,
+			);
+			path = carlife;
+			sourceTree = "<group>";
+		};
+		33B6EF361E24B6FF008A77AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33B6EF4D1E24BFBE008A77AC /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF4E1E24BFBE008A77AC /* Expand */,
+				33B6EF4F1E24BFBE008A77AC /* Main */,
+				33B6EF931E24BFBE008A77AC /* Resource */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		33B6EF4E1E24BFBE008A77AC /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				33C4FF321E272196009283D9 /* Category */,
+				33C4FF331E272196009283D9 /* Const */,
+				33C4FF341E272196009283D9 /* Controls */,
+				33C4FF351E272196009283D9 /* DataBase */,
+				33C4FF361E272196009283D9 /* Macros */,
+				33C4FF371E272196009283D9 /* Tool */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		33B6EF4F1E24BFBE008A77AC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				33C4FF2B1E272175009283D9 /* Logger */,
+				33FDEC1A1E263337006CCC94 /* Base */,
+				33FDEC1E1E263337006CCC94 /* Public */,
+				33B6EF501E24BFBE008A77AC /* DeviceList */,
+				33B6EF541E24BFBE008A77AC /* Function */,
+				33B6EF811E24BFBE008A77AC /* Home */,
+				33B6EF851E24BFBE008A77AC /* Login */,
+				33B6EF8B1E24BFBE008A77AC /* MessageCenter */,
+				33B6EF8F1E24BFBE008A77AC /* MonitorCenter */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		33B6EF501E24BFBE008A77AC /* DeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF511E24BFBE008A77AC /* Controller */,
+				33B6EF521E24BFBE008A77AC /* Model */,
+				33B6EF531E24BFBE008A77AC /* View */,
+			);
+			path = DeviceList;
+			sourceTree = "<group>";
+		};
+		33B6EF511E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3335E98C1E4B0DB2008DA7C6 /* SKDeviceListViewController.h */,
+				3335E98D1E4B0DB2008DA7C6 /* SKDeviceListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF521E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF531E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF541E24BFBE008A77AC /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF551E24BFBE008A77AC /* Alert */,
+				33B6EF591E24BFBE008A77AC /* DeviceMessage */,
+				33B6EF5D1E24BFBE008A77AC /* ElectronicBarrier */,
+				33B6EF611E24BFBE008A77AC /* HistoryPath */,
+				33B6EF651E24BFBE008A77AC /* Logout */,
+				33B6EF691E24BFBE008A77AC /* NearbyNavigation */,
+				33B6EF6D1E24BFBE008A77AC /* OfflineMap */,
+				33B6EF711E24BFBE008A77AC /* RealTimeLocation */,
+				33B6EF751E24BFBE008A77AC /* SendMessage */,
+				33B6EF791E24BFBE008A77AC /* Setting */,
+				33B6EF7D1E24BFBE008A77AC /* UserInfo */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		33B6EF551E24BFBE008A77AC /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF561E24BFBE008A77AC /* Controller */,
+				33B6EF571E24BFBE008A77AC /* Model */,
+				33B6EF581E24BFBE008A77AC /* View */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		33B6EF561E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F6100AD1E509059008C7E7B /* SKAlertViewController.h */,
+				0F6100AE1E509059008C7E7B /* SKAlertViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF571E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF581E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F6100B01E5091A3008C7E7B /* alertView.storyboard */,
+				0F6100B21E509A3F008C7E7B /* SKAlertViewCell.h */,
+				0F6100B31E509A3F008C7E7B /* SKAlertViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF591E24BFBE008A77AC /* DeviceMessage */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF5A1E24BFBE008A77AC /* Controller */,
+				33B6EF5B1E24BFBE008A77AC /* Model */,
+				33B6EF5C1E24BFBE008A77AC /* View */,
+			);
+			path = DeviceMessage;
+			sourceTree = "<group>";
+		};
+		33B6EF5A1E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF5B1E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF5C1E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF5D1E24BFBE008A77AC /* ElectronicBarrier */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF5E1E24BFBE008A77AC /* Controller */,
+				33B6EF5F1E24BFBE008A77AC /* Model */,
+				33B6EF601E24BFBE008A77AC /* View */,
+			);
+			path = ElectronicBarrier;
+			sourceTree = "<group>";
+		};
+		33B6EF5E1E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33586A961E513F8B00B97113 /* SKElectronicBarrierViewController.h */,
+				33586A971E513F8B00B97113 /* SKElectronicBarrierViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF5F1E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF601E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF611E24BFBE008A77AC /* HistoryPath */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF621E24BFBE008A77AC /* Controller */,
+				33B6EF631E24BFBE008A77AC /* Model */,
+				33B6EF641E24BFBE008A77AC /* View */,
+			);
+			path = HistoryPath;
+			sourceTree = "<group>";
+		};
+		33B6EF621E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3397F7261E5306EB00E6CCEC /* SKHistoryPathViewController.h */,
+				3397F7271E5306EB00E6CCEC /* SKHistoryPathViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF631E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF641E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3397F7291E53089E00E6CCEC /* SKHistoryPathView.h */,
+				3397F72A1E53089E00E6CCEC /* SKHistoryPathView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF651E24BFBE008A77AC /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF661E24BFBE008A77AC /* Controller */,
+				33B6EF671E24BFBE008A77AC /* Model */,
+				33B6EF681E24BFBE008A77AC /* View */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
+		33B6EF661E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF671E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF681E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF691E24BFBE008A77AC /* NearbyNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF6A1E24BFBE008A77AC /* Controller */,
+				33B6EF6B1E24BFBE008A77AC /* Model */,
+				33B6EF6C1E24BFBE008A77AC /* View */,
+			);
+			path = NearbyNavigation;
+			sourceTree = "<group>";
+		};
+		33B6EF6A1E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33CA66B71E54019400727719 /* SKNearbyNavigationViewController.h */,
+				33CA66B81E54019400727719 /* SKNearbyNavigationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF6B1E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33CA66C31E542CC700727719 /* SKNearbyModel.h */,
+				33CA66C41E542CC700727719 /* SKNearbyModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF6C1E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33CA66BA1E54052E00727719 /* SKNearbyNavigationViewCell.h */,
+				33CA66BB1E54052E00727719 /* SKNearbyNavigationViewCell.m */,
+				33CA66BD1E5428C600727719 /* SKNearbyViewFlowLayout.h */,
+				33CA66BE1E5428C600727719 /* SKNearbyViewFlowLayout.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF6D1E24BFBE008A77AC /* OfflineMap */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF6E1E24BFBE008A77AC /* Controller */,
+				33B6EF6F1E24BFBE008A77AC /* Model */,
+				33B6EF701E24BFBE008A77AC /* View */,
+			);
+			path = OfflineMap;
+			sourceTree = "<group>";
+		};
+		33B6EF6E1E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33CA66C61E544D8100727719 /* SKOfflineMapViewController.h */,
+				33CA66C71E544D8100727719 /* SKOfflineMapViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF6F1E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33CA66D51E557AE400727719 /* SKCityModel.h */,
+				33CA66D61E557AE400727719 /* SKCityModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF701E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33CA66CC1E5455FF00727719 /* SKOfflineMapView.h */,
+				33CA66CD1E5455FF00727719 /* SKOfflineMapView.m */,
+				33CA66D21E5578B000727719 /* SKCityViewCell.h */,
+				33CA66D31E5578B000727719 /* SKCityViewCell.m */,
+				33CA66D81E55A7E500727719 /* SKDownloadViewCell.h */,
+				33CA66D91E55A7E500727719 /* SKDownloadViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF711E24BFBE008A77AC /* RealTimeLocation */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF721E24BFBE008A77AC /* Controller */,
+				33B6EF731E24BFBE008A77AC /* Model */,
+				33B6EF741E24BFBE008A77AC /* View */,
+			);
+			path = RealTimeLocation;
+			sourceTree = "<group>";
+		};
+		33B6EF721E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33586A991E51411900B97113 /* SKRealTimeLocationViewController.h */,
+				33586A9A1E51411900B97113 /* SKRealTimeLocationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF731E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF741E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF751E24BFBE008A77AC /* SendMessage */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF761E24BFBE008A77AC /* Controller */,
+				33B6EF771E24BFBE008A77AC /* Model */,
+				33B6EF781E24BFBE008A77AC /* View */,
+			);
+			path = SendMessage;
+			sourceTree = "<group>";
+		};
+		33B6EF761E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF771E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF781E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF791E24BFBE008A77AC /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF7A1E24BFBE008A77AC /* Controller */,
+				33B6EF7B1E24BFBE008A77AC /* Model */,
+				33B6EF7C1E24BFBE008A77AC /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		33B6EF7A1E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F6100A81E502948008C7E7B /* SKSettingViewController.h */,
+				0F6100A91E502948008C7E7B /* SKSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF7B1E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF7C1E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF7D1E24BFBE008A77AC /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF7E1E24BFBE008A77AC /* Controller */,
+				33B6EF7F1E24BFBE008A77AC /* Model */,
+				33B6EF801E24BFBE008A77AC /* View */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		33B6EF7E1E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF7F1E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF801E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF811E24BFBE008A77AC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF821E24BFBE008A77AC /* Controller */,
+				33B6EF831E24BFBE008A77AC /* Model */,
+				33B6EF841E24BFBE008A77AC /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		33B6EF821E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3335E9891E4B01B8008DA7C6 /* SKHomeViewController.h */,
+				3335E98A1E4B01B8008DA7C6 /* SKHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF831E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				331E5A9A1E4C0D7D0022B83B /* SKHomeModel.h */,
+				331E5A9B1E4C0D7D0022B83B /* SKHomeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF841E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3335E9951E4B21E7008DA7C6 /* SKHomeView.h */,
+				3335E9961E4B21E7008DA7C6 /* SKHomeView.m */,
+				331E5A971E4C069C0022B83B /* SKHomeCollectionViewLayout.h */,
+				331E5A981E4C069C0022B83B /* SKHomeCollectionViewLayout.m */,
+				331E5A9D1E4C595B0022B83B /* SKHomeViewCell.h */,
+				331E5A9E1E4C595B0022B83B /* SKHomeViewCell.m */,
+				331E5AA01E4C746D0022B83B /* SKHomeHeaderView.h */,
+				331E5AA11E4C746D0022B83B /* SKHomeHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF851E24BFBE008A77AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF861E24BFBE008A77AC /* Controller */,
+				33B6EF891E24BFBE008A77AC /* Model */,
+				33B6EF8A1E24BFBE008A77AC /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		33B6EF861E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF871E24BFBE008A77AC /* LoginViewController.h */,
+				33B6EF881E24BFBE008A77AC /* LoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF891E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF8A1E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33FDEC171E25DA4A006CCC94 /* SKLoginView.h */,
+				33FDEC181E25DA4A006CCC94 /* SKLoginView.m */,
+				338A9FE61E49B7B50095F17D /* SKLoginOptionViewCell.h */,
+				338A9FE71E49B7B50095F17D /* SKLoginOptionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF8B1E24BFBE008A77AC /* MessageCenter */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF8C1E24BFBE008A77AC /* Controller */,
+				33B6EF8D1E24BFBE008A77AC /* Model */,
+				33B6EF8E1E24BFBE008A77AC /* View */,
+			);
+			path = MessageCenter;
+			sourceTree = "<group>";
+		};
+		33B6EF8C1E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3335E9921E4B0E1F008DA7C6 /* SKMessageCenterViewController.h */,
+				3335E9931E4B0E1F008DA7C6 /* SKMessageCenterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF8D1E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33F35EB01E4DB806000960EE /* SKMessageModel.h */,
+				33F35EB11E4DB806000960EE /* SKMessageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF8E1E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33F35EAD1E4DAFEF000960EE /* SKMessageCenterViewCell.h */,
+				33F35EAE1E4DAFEF000960EE /* SKMessageCenterViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF8F1E24BFBE008A77AC /* MonitorCenter */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF901E24BFBE008A77AC /* Controller */,
+				33B6EF911E24BFBE008A77AC /* Model */,
+				33B6EF921E24BFBE008A77AC /* View */,
+			);
+			path = MonitorCenter;
+			sourceTree = "<group>";
+		};
+		33B6EF901E24BFBE008A77AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3335E98F1E4B0DE6008DA7C6 /* SKMonitorCenterViewController.h */,
+				3335E9901E4B0DE6008DA7C6 /* SKMonitorCenterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33B6EF911E24BFBE008A77AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33B6EF921E24BFBE008A77AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33B6EF931E24BFBE008A77AC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF941E24BFBE008A77AC /* AppDelegate */,
+				33B6EF971E24BFBE008A77AC /* Global */,
+				33B6EF9D1E24BFBE008A77AC /* Image */,
+				33B6EF9F1E24BFBE008A77AC /* Plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		33B6EF941E24BFBE008A77AC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF951E24BFBE008A77AC /* AppDelegate.h */,
+				33B6EF961E24BFBE008A77AC /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		33B6EF971E24BFBE008A77AC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF981E24BFBE008A77AC /* LaunchScreen.storyboard */,
+				33B6EF9A1E24BFBE008A77AC /* Main.storyboard */,
+				33B6EF9C1E24BFBE008A77AC /* main.m */,
+				33B6EFA81E24E069008A77AC /* PrefixHeader.pch */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		33B6EF9D1E24BFBE008A77AC /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				33B6EF9E1E24BFBE008A77AC /* Assets.xcassets */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		33B6EF9F1E24BFBE008A77AC /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				3314FC481E28B72100DDCDB3 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		33C4FF2B1E272175009283D9 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				33C4FF2C1E272175009283D9 /* Controller */,
+				33C4FF2F1E272175009283D9 /* Model */,
+				33C4FF301E272175009283D9 /* View */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		33C4FF2C1E272175009283D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33C4FF2F1E272175009283D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33C4FF301E272175009283D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33C4FF321E272196009283D9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3314FC431E28AA9300DDCDB3 /* Other */,
+				3314FC421E28AA9300DDCDB3 /* Foundation */,
+				3314FC441E28AA9300DDCDB3 /* UIKit */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		33C4FF331E272196009283D9 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		33C4FF341E272196009283D9 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		33C4FF351E272196009283D9 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		33C4FF361E272196009283D9 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				33C4FF381E27238B009283D9 /* Macros.h */,
+				33C4FF391E272680009283D9 /* ThirdMacros.h */,
+				33C4FF3A1E272744009283D9 /* TargetConfigMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		33C4FF371E272196009283D9 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				33CA66CF1E55575C00727719 /* SKMap.h */,
+				33CA66D01E55575C00727719 /* SKMap.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		33FDEC1A1E263337006CCC94 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				33FDEC1B1E263337006CCC94 /* Controller */,
+				33FDEC1C1E263337006CCC94 /* Model */,
+				33FDEC1D1E263337006CCC94 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		33FDEC1B1E263337006CCC94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33FDEC251E2634B6006CCC94 /* SKBaseViewController.h */,
+				33FDEC261E2634B6006CCC94 /* SKBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33FDEC1C1E263337006CCC94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33FDEC1D1E263337006CCC94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33FDEC1E1E263337006CCC94 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				33FDEC1F1E263337006CCC94 /* Controller */,
+				33FDEC201E263337006CCC94 /* Model */,
+				33FDEC211E263337006CCC94 /* View */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		33FDEC1F1E263337006CCC94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33ECEBA91E275D2E00AEEDEC /* SKNavigationController.h */,
+				33ECEBAA1E275D2E00AEEDEC /* SKNavigationController.m */,
+				33ECEBAC1E275D5B00AEEDEC /* SKTabBarController.h */,
+				33ECEBAD1E275D5B00AEEDEC /* SKTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33FDEC201E263337006CCC94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33FDEC211E263337006CCC94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33B6EF321E24B6FF008A77AC /* carlife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33B6EF4A1E24B6FF008A77AC /* Build configuration list for PBXNativeTarget "carlife" */;
+			buildPhases = (
+				21027402BF5DD8155E8B2D37 /* [CP] Check Pods Manifest.lock */,
+				33B6EF2F1E24B6FF008A77AC /* Sources */,
+				33B6EF301E24B6FF008A77AC /* Frameworks */,
+				33B6EF311E24B6FF008A77AC /* Resources */,
+				BE33DD1FCC5B0265C346A21D /* [CP] Embed Pods Frameworks */,
+				A4EB437AF0AC7FF97BD6911F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = carlife;
+			productName = carlife;
+			productReference = 33B6EF331E24B6FF008A77AC /* carlife.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33B6EF2B1E24B6FF008A77AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SK;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Sky;
+				TargetAttributes = {
+					33B6EF321E24B6FF008A77AC = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H9Z4MVAQY2;
+					};
+				};
+			};
+			buildConfigurationList = 33B6EF2E1E24B6FF008A77AC /* Build configuration list for PBXProject "carlife" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33B6EF2A1E24B6FF008A77AC;
+			productRefGroup = 33B6EF341E24B6FF008A77AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33B6EF321E24B6FF008A77AC /* carlife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33B6EF311E24B6FF008A77AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3314FC491E28B72100DDCDB3 /* Info.plist in Resources */,
+				33B6EFA31E24BFBE008A77AC /* LaunchScreen.storyboard in Resources */,
+				33B6EFA61E24BFBE008A77AC /* Assets.xcassets in Resources */,
+				33B6EFA41E24BFBE008A77AC /* Main.storyboard in Resources */,
+				0F6100B11E5091A3008C7E7B /* alertView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21027402BF5DD8155E8B2D37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4EB437AF0AC7FF97BD6911F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-carlife/Pods-carlife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE33DD1FCC5B0265C346A21D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-carlife/Pods-carlife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33B6EF2F1E24B6FF008A77AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331E5AA21E4C746D0022B83B /* SKHomeHeaderView.m in Sources */,
+				331E5A9F1E4C595B0022B83B /* SKHomeViewCell.m in Sources */,
+				331E5A9C1E4C0D7D0022B83B /* SKHomeModel.m in Sources */,
+				0F6100B41E509A3F008C7E7B /* SKAlertViewCell.m in Sources */,
+				33CA66CE1E5455FF00727719 /* SKOfflineMapView.m in Sources */,
+				33F35EB21E4DB806000960EE /* SKMessageModel.m in Sources */,
+				0F6100AA1E502948008C7E7B /* SKSettingViewController.m in Sources */,
+				33B6EFA21E24BFBE008A77AC /* AppDelegate.m in Sources */,
+				33CA66D71E557AE400727719 /* SKCityModel.m in Sources */,
+				33B6EFA51E24BFBE008A77AC /* main.m in Sources */,
+				3397F72B1E53089E00E6CCEC /* SKHistoryPathView.m in Sources */,
+				3335E9941E4B0E1F008DA7C6 /* SKMessageCenterViewController.m in Sources */,
+				33586A9B1E51411900B97113 /* SKRealTimeLocationViewController.m in Sources */,
+				33CA66BC1E54052E00727719 /* SKNearbyNavigationViewCell.m in Sources */,
+				3335E9971E4B21E7008DA7C6 /* SKHomeView.m in Sources */,
+				3314FC471E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m in Sources */,
+				33CA66C51E542CC700727719 /* SKNearbyModel.m in Sources */,
+				338A9FE81E49B7B50095F17D /* SKLoginOptionViewCell.m in Sources */,
+				33FDEC271E2634B6006CCC94 /* SKBaseViewController.m in Sources */,
+				33FDEC191E25DA4A006CCC94 /* SKLoginView.m in Sources */,
+				331E5A991E4C069C0022B83B /* SKHomeCollectionViewLayout.m in Sources */,
+				33F35EAF1E4DAFEF000960EE /* SKMessageCenterViewCell.m in Sources */,
+				33B6EFA11E24BFBE008A77AC /* LoginViewController.m in Sources */,
+				33CA66C81E544D8200727719 /* SKOfflineMapViewController.m in Sources */,
+				3335E98B1E4B01B8008DA7C6 /* SKHomeViewController.m in Sources */,
+				33586A981E513F8B00B97113 /* SKElectronicBarrierViewController.m in Sources */,
+				0F6100AF1E509059008C7E7B /* SKAlertViewController.m in Sources */,
+				33CA66D11E55575C00727719 /* SKMap.m in Sources */,
+				3335E9911E4B0DE6008DA7C6 /* SKMonitorCenterViewController.m in Sources */,
+				3335E98E1E4B0DB2008DA7C6 /* SKDeviceListViewController.m in Sources */,
+				33ECEBAE1E275D5B00AEEDEC /* SKTabBarController.m in Sources */,
+				3397F7281E5306EB00E6CCEC /* SKHistoryPathViewController.m in Sources */,
+				33CA66BF1E5428C600727719 /* SKNearbyViewFlowLayout.m in Sources */,
+				33ECEBAB1E275D2E00AEEDEC /* SKNavigationController.m in Sources */,
+				33CA66B91E54019400727719 /* SKNearbyNavigationViewController.m in Sources */,
+				33CA66DA1E55A7E500727719 /* SKDownloadViewCell.m in Sources */,
+				33CA66D41E5578B000727719 /* SKCityViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33B6EF981E24BFBE008A77AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33B6EF991E24BFBE008A77AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		33B6EF9A1E24BFBE008A77AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33B6EF9B1E24BFBE008A77AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33B6EF481E24B6FF008A77AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33B6EF491E24B6FF008A77AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33B6EF4B1E24B6FF008A77AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 329C7A16C5C684AE80C86B90 /* Pods-carlife.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/carlife/Class/Resource/Global/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/carlife/Class/Resource/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = billionfinance.carlife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		33B6EF4C1E24B6FF008A77AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6206BF356F004BD1783A406D /* Pods-carlife.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/carlife/Class/Resource/Global/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/carlife/Class/Resource/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = billionfinance.carlife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33B6EF2E1E24B6FF008A77AC /* Build configuration list for PBXProject "carlife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B6EF481E24B6FF008A77AC /* Debug */,
+				33B6EF491E24B6FF008A77AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33B6EF4A1E24B6FF008A77AC /* Build configuration list for PBXNativeTarget "carlife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B6EF4B1E24B6FF008A77AC /* Debug */,
+				33B6EF4C1E24B6FF008A77AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33B6EF2B1E24B6FF008A77AC /* Project object */;
+}

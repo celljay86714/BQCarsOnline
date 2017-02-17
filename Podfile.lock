@@ -1,0 +1,31 @@
+PODS:
+  - BaiduMapKit (3.2.1)
+  - CocoaLumberjack (2.4.0):
+    - CocoaLumberjack/Default (= 2.4.0)
+    - CocoaLumberjack/Extensions (= 2.4.0)
+  - CocoaLumberjack/Core (2.4.0)
+  - CocoaLumberjack/Default (2.4.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.4.0):
+    - CocoaLumberjack/Default
+  - CYLTabBarController (1.10.0)
+  - GVUserDefaults (1.0.2)
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - BaiduMapKit (~> 3.2.1)
+  - CocoaLumberjack (~> 2.4.0)
+  - CYLTabBarController (~> 1.10.0)
+  - GVUserDefaults (~> 1.0.2)
+  - Masonry (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  BaiduMapKit: 9c748785aa3dddfc41dcb70c14b21ce32f680930
+  CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
+  CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: 83aad16d38bec6991bd6ca017b9d4371e654de16
+
+COCOAPODS: 1.1.1
