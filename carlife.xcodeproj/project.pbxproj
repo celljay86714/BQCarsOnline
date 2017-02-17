@@ -50,6 +50,13 @@
 		33FDEC191E25DA4A006CCC94 /* SKLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDEC181E25DA4A006CCC94 /* SKLoginView.m */; };
 		33FDEC271E2634B6006CCC94 /* SKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDEC261E2634B6006CCC94 /* SKBaseViewController.m */; };
 		477960AEACD4FE5EEF077AA7 /* libPods-carlife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C87C88D957E9042FD712ABC1 /* libPods-carlife.a */; };
+		CD1E55371E56F5B20044B7E2 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = CD1E552E1E56F5B20044B7E2 /* 123.png */; };
+		CD1E55381E56F5B20044B7E2 /* abc123.png in Resources */ = {isa = PBXBuildFile; fileRef = CD1E552F1E56F5B20044B7E2 /* abc123.png */; };
+		CD1E55391E56F5B20044B7E2 /* BQCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E55311E56F5B20044B7E2 /* BQCommunityViewController.m */; };
+		CD1E553A1E56F5B20044B7E2 /* BQDiscussViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E55331E56F5B20044B7E2 /* BQDiscussViewController.m */; };
+		CD1E553B1E56F5B20044B7E2 /* CommunityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E55351E56F5B20044B7E2 /* CommunityTableViewCell.m */; };
+		CD1E553C1E56F5B20044B7E2 /* tableViewcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD1E55361E56F5B20044B7E2 /* tableViewcell.xib */; };
+		CD1E553E1E56F6330044B7E2 /* CommunityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1E553D1E56F6330044B7E2 /* CommunityStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +146,16 @@
 		33FDEC261E2634B6006CCC94 /* SKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKBaseViewController.m; sourceTree = "<group>"; };
 		6206BF356F004BD1783A406D /* Pods-carlife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carlife.release.xcconfig"; path = "Pods/Target Support Files/Pods-carlife/Pods-carlife.release.xcconfig"; sourceTree = "<group>"; };
 		C87C88D957E9042FD712ABC1 /* libPods-carlife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-carlife.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1E552E1E56F5B20044B7E2 /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
+		CD1E552F1E56F5B20044B7E2 /* abc123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abc123.png; sourceTree = "<group>"; };
+		CD1E55301E56F5B20044B7E2 /* BQCommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQCommunityViewController.h; sourceTree = "<group>"; };
+		CD1E55311E56F5B20044B7E2 /* BQCommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQCommunityViewController.m; sourceTree = "<group>"; };
+		CD1E55321E56F5B20044B7E2 /* BQDiscussViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQDiscussViewController.h; sourceTree = "<group>"; };
+		CD1E55331E56F5B20044B7E2 /* BQDiscussViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQDiscussViewController.m; sourceTree = "<group>"; };
+		CD1E55341E56F5B20044B7E2 /* CommunityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityTableViewCell.h; sourceTree = "<group>"; };
+		CD1E55351E56F5B20044B7E2 /* CommunityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityTableViewCell.m; sourceTree = "<group>"; };
+		CD1E55361E56F5B20044B7E2 /* tableViewcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableViewcell.xib; sourceTree = "<group>"; };
+		CD1E553D1E56F6330044B7E2 /* CommunityStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommunityStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +270,7 @@
 		33B6EF4F1E24BFBE008A77AC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CD1E552D1E56F5B20044B7E2 /* Community */,
 				33C4FF2B1E272175009283D9 /* Logger */,
 				33FDEC1A1E263337006CCC94 /* Base */,
 				33FDEC1E1E263337006CCC94 /* Public */,
@@ -1037,6 +1055,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CD1E552D1E56F5B20044B7E2 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E552E1E56F5B20044B7E2 /* 123.png */,
+				CD1E552F1E56F5B20044B7E2 /* abc123.png */,
+				CD1E55301E56F5B20044B7E2 /* BQCommunityViewController.h */,
+				CD1E55311E56F5B20044B7E2 /* BQCommunityViewController.m */,
+				CD1E55321E56F5B20044B7E2 /* BQDiscussViewController.h */,
+				CD1E55331E56F5B20044B7E2 /* BQDiscussViewController.m */,
+				CD1E55341E56F5B20044B7E2 /* CommunityTableViewCell.h */,
+				CD1E55351E56F5B20044B7E2 /* CommunityTableViewCell.m */,
+				CD1E553D1E56F6330044B7E2 /* CommunityStoryboard.storyboard */,
+				CD1E55361E56F5B20044B7E2 /* tableViewcell.xib */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1099,11 +1134,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1E55371E56F5B20044B7E2 /* 123.png in Resources */,
 				3314FC491E28B72100DDCDB3 /* Info.plist in Resources */,
 				33B6EFA31E24BFBE008A77AC /* LaunchScreen.storyboard in Resources */,
 				33B6EFA61E24BFBE008A77AC /* Assets.xcassets in Resources */,
 				33B6EFA41E24BFBE008A77AC /* Main.storyboard in Resources */,
+				CD1E553C1E56F5B20044B7E2 /* tableViewcell.xib in Resources */,
 				0F6100B11E5091A3008C7E7B /* alertView.storyboard in Resources */,
+				CD1E553E1E56F6330044B7E2 /* CommunityStoryboard.storyboard in Resources */,
+				CD1E55381E56F5B20044B7E2 /* abc123.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1182,13 +1221,16 @@
 				338A9FE81E49B7B50095F17D /* SKLoginOptionViewCell.m in Sources */,
 				33FDEC271E2634B6006CCC94 /* SKBaseViewController.m in Sources */,
 				33FDEC191E25DA4A006CCC94 /* SKLoginView.m in Sources */,
+				CD1E553A1E56F5B20044B7E2 /* BQDiscussViewController.m in Sources */,
 				331E5A991E4C069C0022B83B /* SKHomeCollectionViewLayout.m in Sources */,
 				33F35EAF1E4DAFEF000960EE /* SKMessageCenterViewCell.m in Sources */,
 				33B6EFA11E24BFBE008A77AC /* LoginViewController.m in Sources */,
 				33CA66C81E544D8200727719 /* SKOfflineMapViewController.m in Sources */,
 				3335E98B1E4B01B8008DA7C6 /* SKHomeViewController.m in Sources */,
 				33586A981E513F8B00B97113 /* SKElectronicBarrierViewController.m in Sources */,
+				CD1E553B1E56F5B20044B7E2 /* CommunityTableViewCell.m in Sources */,
 				0F6100AF1E509059008C7E7B /* SKAlertViewController.m in Sources */,
+				CD1E55391E56F5B20044B7E2 /* BQCommunityViewController.m in Sources */,
 				33CA66D11E55575C00727719 /* SKMap.m in Sources */,
 				3335E9911E4B0DE6008DA7C6 /* SKMonitorCenterViewController.m in Sources */,
 				3335E98E1E4B0DB2008DA7C6 /* SKDeviceListViewController.m in Sources */,

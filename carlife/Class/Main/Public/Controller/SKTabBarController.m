@@ -12,6 +12,7 @@
 #import "SKDeviceListViewController.h"
 #import "SKMonitorCenterViewController.h"
 #import "SKMessageCenterViewController.h"
+#import "BQCommunityViewController.h"
 
 @interface SKTabBarController ()<UITabBarControllerDelegate>
 
@@ -72,11 +73,24 @@
     SKNavigationController *fourthNavigationController = [[SKNavigationController alloc]
                                                           initWithRootViewController:fourthViewController];
     
+    
+    
+   BQCommunityViewController *controller= [[UIStoryboard storyboardWithName:@"CommunityStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"BQCommunityViewController"];
+    
+  
+    SKNavigationController *commNavigationController = [[SKNavigationController alloc]
+                                                          initWithRootViewController:controller];
+    
+    [commNavigationController.navigationBar setBackgroundImage:[SKTabBarController uxy_imageWithColor:[UIColor whiteColor] size:CGSizeMake(375, 64)] forBarMetrics:UIBarMetricsDefault];
+    
+    
+    
     NSArray *viewControllers = @[
                                  firstNavigationController,
                                  secondNavigationController,
                                  thirdNavigationController,
-                                 fourthNavigationController
+                                 fourthNavigationController,
+                                 commNavigationController
                                  ];
     return viewControllers;
 }
@@ -103,13 +117,38 @@
                                                   CYLTabBarItemImage : @"main_tab_tracking_normal",
                                                   CYLTabBarItemSelectedImage : @"main_tab_tracking_selected"
                                                   };
+    
+    
+    NSDictionary *communityTabBarItemsAttributes = @{
+                                                 CYLTabBarItemTitle : @"社区",
+                                                 CYLTabBarItemImage : @"main_tab_home_normal",
+                                                 CYLTabBarItemSelectedImage : @"main_tab_home_selected",
+                                                 };
+
+    
     NSArray *tabBarItemsAttributes = @[
                                        firstTabBarItemsAttributes,
                                        secondTabBarItemsAttributes,
                                        thirdTabBarItemsAttributes,
-                                       fourthTabBarItemsAttributes
+                                       fourthTabBarItemsAttributes,
+                                       communityTabBarItemsAttributes
                                        ];
     return tabBarItemsAttributes;
+}
+
++ (UIImage *)uxy_imageWithColor:(UIColor *)color size:(CGSize)size
+{
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
 }
 
 @end
