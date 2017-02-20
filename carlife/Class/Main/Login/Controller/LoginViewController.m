@@ -12,6 +12,7 @@
 
 @interface LoginViewController ()<UIGestureRecognizerDelegate>
 @property (nonatomic, strong) SKLoginView *loginView;
+
 @end
 
 @implementation LoginViewController
@@ -21,6 +22,7 @@
     self.view = self.loginView;
     self.view.backgroundColor = [UIColor whiteColor];
     
+
     //键盘出现时，点击空白处键盘消失
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];

@@ -57,6 +57,12 @@
 		CD1E553B1E56F5B20044B7E2 /* CommunityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E55351E56F5B20044B7E2 /* CommunityTableViewCell.m */; };
 		CD1E553C1E56F5B20044B7E2 /* tableViewcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD1E55361E56F5B20044B7E2 /* tableViewcell.xib */; };
 		CD1E553E1E56F6330044B7E2 /* CommunityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1E553D1E56F6330044B7E2 /* CommunityStoryboard.storyboard */; };
+		CDEFC15E1E5A868E00472FA8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC15D1E5A868E00472FA8 /* CoreText.framework */; };
+		CDEFC1601E5A869600472FA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC15F1E5A869600472FA8 /* QuartzCore.framework */; };
+		CDEFC1621E5A869D00472FA8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC1611E5A869D00472FA8 /* Accelerate.framework */; };
+		CDEFC1641E5A86A400472FA8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC1631E5A86A400472FA8 /* MobileCoreServices.framework */; };
+		CDEFC1661E5A86AB00472FA8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC1651E5A86AB00472FA8 /* libz.tbd */; };
+		CDEFC28D1E5AE5A700472FA8 /* BQInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEFC28C1E5AE5A700472FA8 /* BQInputView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +162,13 @@
 		CD1E55351E56F5B20044B7E2 /* CommunityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityTableViewCell.m; sourceTree = "<group>"; };
 		CD1E55361E56F5B20044B7E2 /* tableViewcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableViewcell.xib; sourceTree = "<group>"; };
 		CD1E553D1E56F6330044B7E2 /* CommunityStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommunityStoryboard.storyboard; sourceTree = "<group>"; };
+		CDEFC15D1E5A868E00472FA8 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		CDEFC15F1E5A869600472FA8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CDEFC1611E5A869D00472FA8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		CDEFC1631E5A86A400472FA8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CDEFC1651E5A86AB00472FA8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CDEFC28B1E5AE5A700472FA8 /* BQInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQInputView.h; sourceTree = "<group>"; };
+		CDEFC28C1E5AE5A700472FA8 /* BQInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQInputView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +176,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEFC1661E5A86AB00472FA8 /* libz.tbd in Frameworks */,
+				CDEFC1641E5A86A400472FA8 /* MobileCoreServices.framework in Frameworks */,
+				CDEFC1621E5A869D00472FA8 /* Accelerate.framework in Frameworks */,
+				CDEFC1601E5A869600472FA8 /* QuartzCore.framework in Frameworks */,
+				CDEFC15E1E5A868E00472FA8 /* CoreText.framework in Frameworks */,
 				477960AEACD4FE5EEF077AA7 /* libPods-carlife.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +200,11 @@
 		1C0049EEE3393DF6B56D2AB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDEFC1651E5A86AB00472FA8 /* libz.tbd */,
+				CDEFC1631E5A86A400472FA8 /* MobileCoreServices.framework */,
+				CDEFC1611E5A869D00472FA8 /* Accelerate.framework */,
+				CDEFC15F1E5A869600472FA8 /* QuartzCore.framework */,
+				CDEFC15D1E5A868E00472FA8 /* CoreText.framework */,
 				C87C88D957E9042FD712ABC1 /* libPods-carlife.a */,
 			);
 			name = Frameworks;
@@ -1066,6 +1089,8 @@
 				CD1E55331E56F5B20044B7E2 /* BQDiscussViewController.m */,
 				CD1E55341E56F5B20044B7E2 /* CommunityTableViewCell.h */,
 				CD1E55351E56F5B20044B7E2 /* CommunityTableViewCell.m */,
+				CDEFC28B1E5AE5A700472FA8 /* BQInputView.h */,
+				CDEFC28C1E5AE5A700472FA8 /* BQInputView.m */,
 				CD1E553D1E56F6330044B7E2 /* CommunityStoryboard.storyboard */,
 				CD1E55361E56F5B20044B7E2 /* tableViewcell.xib */,
 			);
@@ -1231,6 +1256,7 @@
 				CD1E553B1E56F5B20044B7E2 /* CommunityTableViewCell.m in Sources */,
 				0F6100AF1E509059008C7E7B /* SKAlertViewController.m in Sources */,
 				CD1E55391E56F5B20044B7E2 /* BQCommunityViewController.m in Sources */,
+				CDEFC28D1E5AE5A700472FA8 /* BQInputView.m in Sources */,
 				33CA66D11E55575C00727719 /* SKMap.m in Sources */,
 				3335E9911E4B0DE6008DA7C6 /* SKMonitorCenterViewController.m in Sources */,
 				3335E98E1E4B0DB2008DA7C6 /* SKDeviceListViewController.m in Sources */,
@@ -1359,6 +1385,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H9Z4MVAQY2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/carlife/Class/Resource/Global/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/carlife/Class/Resource/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1376,6 +1403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H9Z4MVAQY2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/carlife/Class/Resource/Global/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/carlife/Class/Resource/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
