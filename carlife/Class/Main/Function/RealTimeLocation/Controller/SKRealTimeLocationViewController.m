@@ -73,11 +73,10 @@
 }
 
 #pragma mark -- 懒加载
-- (BMKMapView *)mapView
+- (SKMapView *)mapView
 {
     if (!_mapView) {
-        _mapView = [[BMKMapView alloc] initWithFrame:self.view.bounds];
-        [_mapView setZoomLevel:14];
+        _mapView = [[SKMapView alloc] initWithFrame:self.view.bounds];
     }
     return _mapView;
 }
@@ -116,7 +115,7 @@
     if ([overlay isKindOfClass:[BMKPolyline class]]) {
         BMKPolylineView *polylineView = [[BMKPolylineView alloc] initWithOverlay:overlay];
         polylineView.strokeColor = [[UIColor greenColor] colorWithAlphaComponent:1];
-        polylineView.lineWidth = 1;
+        polylineView.lineWidth = 3;
         return polylineView;
     }
     return nil;
