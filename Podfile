@@ -12,7 +12,7 @@ pod 'MBProgressHUD'#, '~> 0.9.2'
 pod 'MJExtension'#, '~> 3.0.10'
 pod 'SDWebImage'#, '~> 3.7.6'
 pod 'YYCache'
-pod 'IQKeyboardManager'#, '~>3.2.1.1'
+#pod 'IQKeyboardManager'#, '~>3.2.1.1'
 pod 'RealReachability'
 pod 'MGSwipeTableCell'
 pod 'FMDB'#, '~> 2.6.2'
@@ -26,7 +26,9 @@ pod 'CocoaLumberjack'#, '2.4.0'
 pod 'GVUserDefaults'#, '1.0.2'
 pod 'BaiduMapKit'#, '3.2.1'
 pod 'MXSegmentedPager'
-
-
+pod 'ReactiveCocoa'#,'~> 2.5'
+pod 'XYQuick','~> 0.6.8'
+pod 'DACircularProgress','~> 2.3.1'
+pod 'pop','~> 1.0.7'
 
 end

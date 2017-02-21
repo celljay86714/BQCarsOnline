@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UITableView  * recommendTableView;
 
 
+
 @end
 
 @implementation BQCommunityViewController
@@ -123,8 +124,9 @@
     
     BQDiscussViewController *controller = [[UIStoryboard storyboardWithName:@"CommunityStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"BQDiscussViewController"];
     
+    controller.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:controller animated:YES];
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 

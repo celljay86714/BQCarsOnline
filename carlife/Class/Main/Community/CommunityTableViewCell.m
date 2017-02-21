@@ -7,7 +7,7 @@
 //
 
 #import "CommunityTableViewCell.h"
-
+#include "IDMPhotoBrowser.h"
 @implementation CommunityTableViewCell
 
 -(void)awakeFromNib{
@@ -54,6 +54,18 @@
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
     return 0;
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSMutableArray *photos =[NSMutableArray arrayWithArray: @[[UIImage imageNamed: @"abc123"],[UIImage imageNamed: @"abc123"],[UIImage imageNamed: @"abc123"]]];
+    
+    NSArray *photosWithURL = [IDMPhoto photosWithImages:photos];
+    IDMPhotoBrowser *browser= [[IDMPhotoBrowser alloc]initWithPhotos:photosWithURL animatedFromView:[collectionView cellForItemAtIndexPath:indexPath]];
+    [browser setInitialPageIndex:indexPath.row];
+    browser.displayDoneButton = NO;
+    [[self uxy_currentViewController] presentViewController:browser animated:YES completion:nil];
 }
 
 
