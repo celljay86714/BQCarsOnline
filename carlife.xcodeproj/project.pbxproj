@@ -43,6 +43,7 @@
 		33CA66D41E5578B000727719 /* SKCityViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66D31E5578B000727719 /* SKCityViewCell.m */; };
 		33CA66D71E557AE400727719 /* SKCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66D61E557AE400727719 /* SKCityModel.m */; };
 		33CA66DA1E55A7E500727719 /* SKDownloadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CA66D91E55A7E500727719 /* SKDownloadViewCell.m */; };
+		33CEFEB51E5AD853000E37A0 /* SKMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CEFEB41E5AD853000E37A0 /* SKMapView.m */; };
 		33ECEBAB1E275D2E00AEEDEC /* SKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ECEBAA1E275D2E00AEEDEC /* SKNavigationController.m */; };
 		33ECEBAE1E275D5B00AEEDEC /* SKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ECEBAD1E275D5B00AEEDEC /* SKTabBarController.m */; };
 		33F35EAF1E4DAFEF000960EE /* SKMessageCenterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F35EAE1E4DAFEF000960EE /* SKMessageCenterViewCell.m */; };
@@ -132,6 +133,8 @@
 		33CA66D61E557AE400727719 /* SKCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCityModel.m; sourceTree = "<group>"; };
 		33CA66D81E55A7E500727719 /* SKDownloadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDownloadViewCell.h; sourceTree = "<group>"; };
 		33CA66D91E55A7E500727719 /* SKDownloadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDownloadViewCell.m; sourceTree = "<group>"; };
+		33CEFEB31E5AD853000E37A0 /* SKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMapView.h; sourceTree = "<group>"; };
+		33CEFEB41E5AD853000E37A0 /* SKMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMapView.m; sourceTree = "<group>"; };
 		33ECEBA91E275D2E00AEEDEC /* SKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKNavigationController.h; sourceTree = "<group>"; };
 		33ECEBAA1E275D2E00AEEDEC /* SKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKNavigationController.m; sourceTree = "<group>"; };
 		33ECEBAC1E275D5B00AEEDEC /* SKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTabBarController.h; sourceTree = "<group>"; };
@@ -610,6 +613,8 @@
 		33B6EF741E24BFBE008A77AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				33CEFEB31E5AD853000E37A0 /* SKMapView.h */,
+				33CEFEB41E5AD853000E37A0 /* SKMapView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1212,6 +1217,7 @@
 				33CA66D71E557AE400727719 /* SKCityModel.m in Sources */,
 				33B6EFA51E24BFBE008A77AC /* main.m in Sources */,
 				3397F72B1E53089E00E6CCEC /* SKHistoryPathView.m in Sources */,
+				33CEFEB51E5AD853000E37A0 /* SKMapView.m in Sources */,
 				3335E9941E4B0E1F008DA7C6 /* SKMessageCenterViewController.m in Sources */,
 				33586A9B1E51411900B97113 /* SKRealTimeLocationViewController.m in Sources */,
 				33CA66BC1E54052E00727719 /* SKNearbyNavigationViewCell.m in Sources */,

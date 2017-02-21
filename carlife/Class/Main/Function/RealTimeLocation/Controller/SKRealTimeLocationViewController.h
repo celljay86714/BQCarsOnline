@@ -7,13 +7,13 @@
 //
 
 #import "SKBaseViewController.h"
-#import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import "SKMapView.h"
 #import <BaiduMapAPI_Location/BMKLocationComponent.h>
 #import <BaiduMapAPI_Search/BMKGeoCodeSearch.h>
 
 @interface SKRealTimeLocationViewController : SKBaseViewController<BMKMapViewDelegate,BMKLocationServiceDelegate,BMKGeoCodeSearchDelegate>
 
-@property (nonatomic, strong) BMKMapView *mapView;
+@property (nonatomic, strong) SKMapView *mapView;
 @property (nonatomic, strong) BMKLocationService *locService;
 @property (nonatomic, strong) BMKGeoCodeSearch *searcher;
 
