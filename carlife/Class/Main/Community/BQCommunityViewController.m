@@ -126,7 +126,7 @@
     
     controller.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:controller animated:YES];
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 

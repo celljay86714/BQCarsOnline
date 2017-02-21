@@ -27,5 +27,8 @@ pod 'GVUserDefaults'#, '1.0.2'
 pod 'BaiduMapKit'#, '3.2.1'
 pod 'MXSegmentedPager'
 pod 'ReactiveCocoa'#,'~> 2.5'
+pod 'XYQuick','~> 0.6.8'
+pod 'DACircularProgress','~> 2.3.1'
+pod 'pop','~> 1.0.7'
 
 end

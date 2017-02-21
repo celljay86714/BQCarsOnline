@@ -29,8 +29,6 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.tableView registerNib:[UINib nibWithNibName:@"tableViewcell" bundle:nil] forCellReuseIdentifier:@"CommunityTableViewCell"];
     
-    // Do any additional setup after loading the view.
-    
     
     // 监听键盘弹出
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
@@ -39,11 +37,7 @@
     _inputView.placeholder = @"请输入你的评论";
     _inputView.placeholderColor = [UIColor grayColor];
     
-    // 监听文本框文字高度改变
     _inputView.yz_textHeightChangeBlock = ^(NSString *text,CGFloat textHeight){
-        // 文本框文字高度改变会自动执行这个【block】，可以在这【修改底部View的高度】
-        // 设置底部条的高度 = 文字高度 + textView距离上下间距约束
-        // 为什么添加10 ？（10 = 底部View距离上（5）底部View距离下（5）间距总和）
         _bottomHCons.constant = textHeight + 16;
     };
     
@@ -51,12 +45,20 @@
     _inputView.maxNumberOfLines = 4;
     
     [[self.cancelButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-      
         [self.inputView resignFirstResponder];
         self.inputView.text = nil;
         self.bottomHCons.constant =40+10;
     }];
+    
+    
+    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]initWithCustomTitle:@"发帖" bgImage:nil actionBlock:^{
+        
+        BQDiscussViewController *controller = [[UIStoryboard storyboardWithName:@"CommunityStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"BQPostViewController"];
+        
+        [self.navigationController pushViewController:controller animated:YES];
 
+        
+    }];
 }
 
 
@@ -77,6 +79,8 @@
     [UIView animateWithDuration:duration animations:^{
         [self.view layoutIfNeeded];
     }];
+    
+    [self.tableView setContentOffset:CGPointMake(0, self.tableView.contentSize.height+endFrame.size.height-SCREEN_HEIGHT) animated:YES];
 }
 
 
