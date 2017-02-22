@@ -10,6 +10,7 @@
 #import "SKNearbyViewFlowLayout.h"
 #import "SKNearbyNavigationViewCell.h"
 #import "SKNearbyModel.h"
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
 
 @interface SKNearbyNavigationViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -61,6 +62,15 @@ static NSString *cellID = @"nearbyCell";
 {
     SKNearbyNavigationViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     cell.item = self.items[indexPath.item];
+    NSString *keyword = cell.item.title;
+    cell.clickItem = ^{
+        BMKOpenPoiNearbyOption *opt = [[BMKOpenPoiNearbyOption alloc] init];
+        opt.appScheme = @"baidumapsdk://mapsdk.baidu.com";
+        opt.keyword = keyword;
+        opt.location = CLLocationCoordinate2DMake(39.915, 116.360582);
+        opt.radius = 1000;
+        BMKOpenErrorCode code = [BMKOpenPoi openBaiduMapPoiNearbySearch:opt];
+    };
     return cell;
 }
 
