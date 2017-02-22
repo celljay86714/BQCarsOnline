@@ -37,6 +37,7 @@
 {
     [self.itemLabel setTextAlignment:NSTextAlignmentCenter];
     [self.itemLabel setFont:[UIFont systemFontOfSize:12]];
+    [self.itemButton addTarget:self action:@selector(didClickItem) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)layoutSubviews
@@ -50,6 +51,11 @@
         make.left.right.bottom.equalTo(self.contentView);
         make.top.equalTo(self.itemButton.bottom);
     }];
+}
+
+- (void)didClickItem
+{
+    self.clickItem();
 }
 
 - (void)setItem:(SKNearbyModel *)item
