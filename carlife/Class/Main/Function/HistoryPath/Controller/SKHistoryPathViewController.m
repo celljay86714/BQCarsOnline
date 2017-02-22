@@ -8,6 +8,7 @@
 
 #import "SKHistoryPathViewController.h"
 #import "SKHistoryPathView.h"
+#import "BQTrajectoryViewController.h"
 
 @interface SKHistoryPathViewController ()<UITextFieldDelegate>
 
@@ -32,6 +33,15 @@
     
     self.pathView.fromTextField.delegate = self;
     self.pathView.toTextField.delegate = self;
+    
+    [[self.pathView.searchBt rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+       
+        BQTrajectoryViewController *controller =[[BQTrajectoryViewController alloc]init];
+        
+        [self.navigationController pushViewController:controller animated:YES];
+    }];
+    
+    
 }
 
 #pragma mark - UITextField 代理方法

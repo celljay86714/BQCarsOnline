@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) UITextField *fromTextField;
 @property (nonatomic, strong) UITextField *toTextField;
+@property (nonatomic, strong) UIButton *searchBt;
 
 @end

@@ -20,8 +20,6 @@
 @property (nonatomic, strong) UILabel *yesterdayLabel;
 @property (nonatomic, strong) UILabel *customLabel;
 
-@property (nonatomic, strong) UIButton *searchBt;
-
 @end
 
 @implementation SKHistoryPathView

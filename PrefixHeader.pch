@@ -29,6 +29,7 @@
 #import "CommonDeifnitions.h"
 #import "ProprietorMacro.h"
 #import "UIBarButtonItem+Additional.h"
+#import "VKCategory.h"
 
 
 #endif /* PrefixHeader_pch */
