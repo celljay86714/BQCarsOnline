@@ -8,6 +8,7 @@
 
 #import "SKHistoryPathViewController.h"
 #import "SKHistoryPathView.h"
+#import "BQTrajectoryViewController.h"
 
 @interface SKHistoryPathViewController ()
 
@@ -23,6 +24,15 @@
     self.navigationItem.title = @"历史轨迹";
     self.view = self.pathView;
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [[self.pathView.searchBt rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+       
+        BQTrajectoryViewController *controller =[[BQTrajectoryViewController alloc]init];
+        
+        [self.navigationController pushViewController:controller animated:YES];
+    }];
+    
+    
 }
 
 - (SKHistoryPathView *)pathView

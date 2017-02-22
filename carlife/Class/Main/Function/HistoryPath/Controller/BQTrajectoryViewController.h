@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
 
-@interface BQTrajectoryViewController : UIViewController
+@interface BQTrajectoryViewController : UIViewController<BMKMapViewDelegate>
+
+@property (strong, nonatomic)BMKMapView *mapView;
 
 @end
