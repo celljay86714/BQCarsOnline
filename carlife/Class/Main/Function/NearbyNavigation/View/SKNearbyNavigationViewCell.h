@@ -13,4 +13,6 @@
 
 @property (nonatomic, strong) SKNearbyModel *item;
 
+@property (nonatomic, copy) void (^clickItem)();
+
 @end
