@@ -89,6 +89,7 @@
 		CDEFC1641E5A86A400472FA8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC1631E5A86A400472FA8 /* MobileCoreServices.framework */; };
 		CDEFC1661E5A86AB00472FA8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC1651E5A86AB00472FA8 /* libz.tbd */; };
 		CDEFC28D1E5AE5A700472FA8 /* BQInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEFC28C1E5AE5A700472FA8 /* BQInputView.m */; };
+		CDF9B6DF1E5D2CC200624D5F /* BQTrajectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF9B6DE1E5D2CC200624D5F /* BQTrajectoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -249,6 +250,8 @@
 		CDEFC1651E5A86AB00472FA8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CDEFC28B1E5AE5A700472FA8 /* BQInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQInputView.h; sourceTree = "<group>"; };
 		CDEFC28C1E5AE5A700472FA8 /* BQInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQInputView.m; sourceTree = "<group>"; };
+		CDF9B6DD1E5D2CC200624D5F /* BQTrajectoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQTrajectoryViewController.h; sourceTree = "<group>"; };
+		CDF9B6DE1E5D2CC200624D5F /* BQTrajectoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQTrajectoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -563,6 +566,8 @@
 			children = (
 				3397F7261E5306EB00E6CCEC /* SKHistoryPathViewController.h */,
 				3397F7271E5306EB00E6CCEC /* SKHistoryPathViewController.m */,
+				CDF9B6DD1E5D2CC200624D5F /* BQTrajectoryViewController.h */,
+				CDF9B6DE1E5D2CC200624D5F /* BQTrajectoryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1412,6 +1417,7 @@
 				CDEFC28D1E5AE5A700472FA8 /* BQInputView.m in Sources */,
 				33CA66D11E55575C00727719 /* SKMap.m in Sources */,
 				CDA3239E1E5BCB5E005095F7 /* IDMPhoto.m in Sources */,
+				CDF9B6DF1E5D2CC200624D5F /* BQTrajectoryViewController.m in Sources */,
 				3335E9911E4B0DE6008DA7C6 /* SKMonitorCenterViewController.m in Sources */,
 				3335E98E1E4B0DB2008DA7C6 /* SKDeviceListViewController.m in Sources */,
 				CDE481EF1E5C2F2300F72143 /* TZAssetModel.m in Sources */,

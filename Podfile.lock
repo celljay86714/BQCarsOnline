@@ -25,6 +25,7 @@ PODS:
     - CocoaLumberjack/Default
   - CYLTabBarController (1.6.0)
   - DACircularProgress (2.3.1)
+  - FDStackView (1.0)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -85,6 +86,7 @@ DEPENDENCIES:
   - CocoaLumberjack
   - CYLTabBarController
   - DACircularProgress (~> 2.3.1)
+  - FDStackView (~> 1.0)
   - FMDB
   - GVUserDefaults
   - KGModal
@@ -111,6 +113,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   CYLTabBarController: efbdd574772be17f17965acd7ee993f5972ff02f
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
@@ -134,6 +137,6 @@ SPEC CHECKSUMS:
   XYQuick: 89515feef61e473a11c48820da46d88bbacb8706
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
 
-PODFILE CHECKSUM: c307c5d7d6b111a9b9eb1082a24a72df6ac4bfc0
+PODFILE CHECKSUM: e3de3be8346bf6be29cba95648fc817fd8608c96
 
 COCOAPODS: 1.1.1
