@@ -18,5 +18,4 @@
 @property (nonatomic,strong)IBOutlet UILabel *raiseNumber;
 @property (nonatomic,strong)IBOutlet UILabel *messageNumber;
 
-
 @end
