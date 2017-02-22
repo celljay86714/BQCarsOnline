@@ -30,5 +30,6 @@ pod 'ReactiveCocoa'#,'~> 2.5'
 pod 'XYQuick','~> 0.6.8'
 pod 'DACircularProgress','~> 2.3.1'
 pod 'pop','~> 1.0.7'
+pod 'FDStackView', '~> 1.0'
 
 end
