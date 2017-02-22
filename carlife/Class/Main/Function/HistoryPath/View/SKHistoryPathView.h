@@ -10,4 +10,7 @@
 
 @interface SKHistoryPathView : UIView
 
+@property (nonatomic, strong) UITextField *fromTextField;
+@property (nonatomic, strong) UITextField *toTextField;
+
 @end

@@ -47,7 +47,7 @@ static const NSInteger rightMargin = 14;
     [self.distanceLabel setFont:SYSTEMFONT(13)];
     self.distanceLabel.text = @"人车相距1832km";
     
-    [self.mapTypeBt setBackgroundImage:[UIImage imageNamed:@"map_type_satelite"] forState:UIControlStateNormal];
+    [self.mapTypeBt setBackgroundImage:[UIImage imageNamed:@"map_type_satellite"] forState:UIControlStateNormal];
     [self.navigationBt setBackgroundImage:[UIImage imageNamed:@"location_carandperson"] forState:UIControlStateNormal];
     [self.locationTypeBt setBackgroundImage:[UIImage imageNamed:@"location_normal"] forState:UIControlStateNormal];
     [self.zoomOutBt setBackgroundImage:[UIImage imageNamed:@"zoomout_normal"] forState:UIControlStateNormal];
