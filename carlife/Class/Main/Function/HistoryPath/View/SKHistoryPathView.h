@@ -10,4 +10,6 @@
 
 @interface SKHistoryPathView : UIView
 
+@property (nonatomic, strong) UIButton *searchBt;
+
 @end
