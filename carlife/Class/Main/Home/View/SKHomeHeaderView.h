@@ -10,4 +10,5 @@
 
 @interface SKHomeHeaderView : UICollectionReusableView
 
+-(void)setlayer;
 @end
