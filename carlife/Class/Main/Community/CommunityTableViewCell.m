@@ -21,6 +21,8 @@
 
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
+    
+    
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section

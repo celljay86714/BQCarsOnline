@@ -66,6 +66,8 @@
     [self addSubview:loginBodyView];
     self.loginBodyView = loginBodyView;
     
+    
+    
     UIView *loginTypeView = [[UIView alloc] init];
     UILabel *loginTypeLabel = [[UILabel alloc] init];
     [loginTypeView addSubview:loginTypeLabel];
@@ -133,9 +135,8 @@
 
 - (void)setAttributes
 {
-    [self.titleLabel setFont:[UIFont systemFontOfSize:25 weight:1]];
+    [self.titleLabel setFont:[UIFont systemFontOfSize:36 weight:0]];
     self.titleLabel.text = @"爱车在哪";
-//    [self.loginBodyView setBackgroundColor:[UIColor lightGrayColor]];
     
     [self setLabelViewAttributes];
     [self setButtonFieldAttributes];
