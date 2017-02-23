@@ -11,6 +11,8 @@
 		0F6100AF1E509059008C7E7B /* SKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6100AE1E509059008C7E7B /* SKAlertViewController.m */; };
 		0F6100B11E5091A3008C7E7B /* alertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F6100B01E5091A3008C7E7B /* alertView.storyboard */; };
 		0F6100B41E509A3F008C7E7B /* SKAlertViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6100B31E509A3F008C7E7B /* SKAlertViewCell.m */; };
+		331357711E5DB1CF00C2AF76 /* ElecBarrier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331357701E5DB1CF00C2AF76 /* ElecBarrier.storyboard */; };
+		331357741E5DB52F00C2AF76 /* SKAddElectronicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331357731E5DB52F00C2AF76 /* SKAddElectronicViewController.m */; };
 		3314FC471E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3314FC461E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m */; };
 		331E5A991E4C069C0022B83B /* SKHomeCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 331E5A981E4C069C0022B83B /* SKHomeCollectionViewLayout.m */; };
 		331E5A9C1E4C0D7D0022B83B /* SKHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 331E5A9B1E4C0D7D0022B83B /* SKHomeModel.m */; };
@@ -23,6 +25,8 @@
 		3335E9971E4B21E7008DA7C6 /* SKHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3335E9961E4B21E7008DA7C6 /* SKHomeView.m */; };
 		33586A981E513F8B00B97113 /* SKElectronicBarrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33586A971E513F8B00B97113 /* SKElectronicBarrierViewController.m */; };
 		33586A9B1E51411900B97113 /* SKRealTimeLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33586A9A1E51411900B97113 /* SKRealTimeLocationViewController.m */; };
+		335F27C21E5E8AA0007E9476 /* SKElectronicMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F27C11E5E8AA0007E9476 /* SKElectronicMapViewController.m */; };
+		335F27C51E5EDC2B007E9476 /* SKAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F27C41E5EDC2B007E9476 /* SKAnnotationView.m */; };
 		338A9FE81E49B7B50095F17D /* SKLoginOptionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 338A9FE71E49B7B50095F17D /* SKLoginOptionViewCell.m */; };
 		3397F7281E5306EB00E6CCEC /* SKHistoryPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397F7271E5306EB00E6CCEC /* SKHistoryPathViewController.m */; };
 		3397F72B1E53089E00E6CCEC /* SKHistoryPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397F72A1E53089E00E6CCEC /* SKHistoryPathView.m */; };
@@ -104,6 +108,9 @@
 		0F6100B21E509A3F008C7E7B /* SKAlertViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAlertViewCell.h; sourceTree = "<group>"; };
 		0F6100B31E509A3F008C7E7B /* SKAlertViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAlertViewCell.m; sourceTree = "<group>"; };
 		329C7A16C5C684AE80C86B90 /* Pods-carlife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carlife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-carlife/Pods-carlife.debug.xcconfig"; sourceTree = "<group>"; };
+		331357701E5DB1CF00C2AF76 /* ElecBarrier.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ElecBarrier.storyboard; sourceTree = "<group>"; };
+		331357721E5DB52F00C2AF76 /* SKAddElectronicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAddElectronicViewController.h; sourceTree = "<group>"; };
+		331357731E5DB52F00C2AF76 /* SKAddElectronicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAddElectronicViewController.m; sourceTree = "<group>"; };
 		3314FC451E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+SKProperties.h"; sourceTree = "<group>"; };
 		3314FC461E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GVUserDefaults+SKProperties.m"; sourceTree = "<group>"; };
 		331E5A971E4C069C0022B83B /* SKHomeCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHomeCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -128,6 +135,10 @@
 		33586A971E513F8B00B97113 /* SKElectronicBarrierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKElectronicBarrierViewController.m; sourceTree = "<group>"; };
 		33586A991E51411900B97113 /* SKRealTimeLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRealTimeLocationViewController.h; sourceTree = "<group>"; };
 		33586A9A1E51411900B97113 /* SKRealTimeLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRealTimeLocationViewController.m; sourceTree = "<group>"; };
+		335F27C01E5E8AA0007E9476 /* SKElectronicMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKElectronicMapViewController.h; sourceTree = "<group>"; };
+		335F27C11E5E8AA0007E9476 /* SKElectronicMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKElectronicMapViewController.m; sourceTree = "<group>"; };
+		335F27C31E5EDC2B007E9476 /* SKAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAnnotationView.h; sourceTree = "<group>"; };
+		335F27C41E5EDC2B007E9476 /* SKAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAnnotationView.m; sourceTree = "<group>"; };
 		338A9FE61E49B7B50095F17D /* SKLoginOptionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKLoginOptionViewCell.h; sourceTree = "<group>"; };
 		338A9FE71E49B7B50095F17D /* SKLoginOptionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLoginOptionViewCell.m; sourceTree = "<group>"; };
 		3397F7261E5306EB00E6CCEC /* SKHistoryPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKHistoryPathViewController.h; sourceTree = "<group>"; };
@@ -539,6 +550,10 @@
 			children = (
 				33586A961E513F8B00B97113 /* SKElectronicBarrierViewController.h */,
 				33586A971E513F8B00B97113 /* SKElectronicBarrierViewController.m */,
+				331357721E5DB52F00C2AF76 /* SKAddElectronicViewController.h */,
+				331357731E5DB52F00C2AF76 /* SKAddElectronicViewController.m */,
+				335F27C01E5E8AA0007E9476 /* SKElectronicMapViewController.h */,
+				335F27C11E5E8AA0007E9476 /* SKElectronicMapViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -553,6 +568,9 @@
 		33B6EF601E24BFBE008A77AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				331357701E5DB1CF00C2AF76 /* ElecBarrier.storyboard */,
+				335F27C31E5EDC2B007E9476 /* SKAnnotationView.h */,
+				335F27C41E5EDC2B007E9476 /* SKAnnotationView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1312,6 +1330,7 @@
 				CD1E55371E56F5B20044B7E2 /* 123.png in Resources */,
 				CDA3239D1E5BCB5E005095F7 /* IDMPBLocalizations.bundle in Resources */,
 				CDE482101E5C34D000F72143 /* Main.storyboard in Resources */,
+				331357711E5DB1CF00C2AF76 /* ElecBarrier.storyboard in Resources */,
 				CDF9B6E61E5D388E00624D5F /* sportarrow.png in Resources */,
 				CD1E553C1E56F5B20044B7E2 /* tableViewcell.xib in Resources */,
 				0F6100B11E5091A3008C7E7B /* alertView.storyboard in Resources */,
@@ -1398,6 +1417,7 @@
 				33586A9B1E51411900B97113 /* SKRealTimeLocationViewController.m in Sources */,
 				CDE481EE1E5C2F2300F72143 /* TZAssetCell.m in Sources */,
 				33CA66BC1E54052E00727719 /* SKNearbyNavigationViewCell.m in Sources */,
+				331357741E5DB52F00C2AF76 /* SKAddElectronicViewController.m in Sources */,
 				3335E9971E4B21E7008DA7C6 /* SKHomeView.m in Sources */,
 				3314FC471E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m in Sources */,
 				33CA66C51E542CC700727719 /* SKNearbyModel.m in Sources */,
@@ -1408,6 +1428,7 @@
 				CD1E553A1E56F5B20044B7E2 /* BQDiscussViewController.m in Sources */,
 				CDE481F31E5C2F2300F72143 /* TZPhotoPickerController.m in Sources */,
 				CDE481F21E5C2F2300F72143 /* TZImagePickerController.m in Sources */,
+				335F27C51E5EDC2B007E9476 /* SKAnnotationView.m in Sources */,
 				CDE481D61E5C2EF400F72143 /* VKPhotoPicker.m in Sources */,
 				CDA323A21E5BCB5E005095F7 /* IDMTapDetectingView.m in Sources */,
 				331E5A991E4C069C0022B83B /* SKHomeCollectionViewLayout.m in Sources */,
@@ -1422,6 +1443,7 @@
 				0F6100AF1E509059008C7E7B /* SKAlertViewController.m in Sources */,
 				CDF9B6E41E5D376200624D5F /* SKMapView.m in Sources */,
 				CDE481ED1E5C2F2300F72143 /* NSBundle+TZImagePicker.m in Sources */,
+				335F27C21E5E8AA0007E9476 /* SKElectronicMapViewController.m in Sources */,
 				CD1E55391E56F5B20044B7E2 /* BQCommunityViewController.m in Sources */,
 				CDA3239C1E5BCB5E005095F7 /* IDMCaptionView.m in Sources */,
 				CDE481F71E5C2F2300F72143 /* UIView+Layout.m in Sources */,
