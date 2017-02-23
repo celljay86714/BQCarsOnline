@@ -139,8 +139,6 @@
 
     } completion:^(BOOL finished) {
         [self running];
-        sportAnnotation.title=[NSString stringWithFormat:@"%f",node.distance];
-
     }];
 }
 

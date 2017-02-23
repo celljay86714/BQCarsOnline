@@ -97,6 +97,8 @@
 		CDF9B6E41E5D376200624D5F /* SKMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF9B6E31E5D376200624D5F /* SKMapView.m */; };
 		CDF9B6E61E5D388E00624D5F /* sportarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF9B6E51E5D388E00624D5F /* sportarrow.png */; };
 		CDF9B6E81E5D71D300624D5F /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF9B6E71E5D71D300624D5F /* View.xib */; };
+		CDF9B6EC1E5D8D8D00624D5F /* clock_time.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF9B6EB1E5D8D8D00624D5F /* clock_time.png */; };
+		CDF9B6EF1E5D96E500624D5F /* UIView+Rotatable.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF9B6EE1E5D96E500624D5F /* UIView+Rotatable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -269,6 +271,9 @@
 		CDF9B6E31E5D376200624D5F /* SKMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMapView.m; sourceTree = "<group>"; };
 		CDF9B6E51E5D388E00624D5F /* sportarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sportarrow.png; sourceTree = "<group>"; };
 		CDF9B6E71E5D71D300624D5F /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		CDF9B6EB1E5D8D8D00624D5F /* clock_time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_time.png; sourceTree = "<group>"; };
+		CDF9B6ED1E5D96E500624D5F /* UIView+Rotatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rotatable.h"; sourceTree = "<group>"; };
+		CDF9B6EE1E5D96E500624D5F /* UIView+Rotatable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotatable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1086,6 +1091,8 @@
 				33CA66D01E55575C00727719 /* SKMap.m */,
 				CDE4821F1E5C3A5200F72143 /* UIPlaceHolderTextView.h */,
 				CDE482201E5C3A5200F72143 /* UIPlaceHolderTextView.m */,
+				CDF9B6ED1E5D96E500624D5F /* UIView+Rotatable.h */,
+				CDF9B6EE1E5D96E500624D5F /* UIView+Rotatable.m */,
 				CDE481F81E5C2F2A00F72143 /* PhotoPickere */,
 			);
 			path = Tool;
@@ -1249,6 +1256,7 @@
 				CDE4820D1E5C34D000F72143 /* LaunchScreen.storyboard */,
 				CDE4820E1E5C34D000F72143 /* Main.storyboard */,
 				CDE482041E5C312200F72143 /* main.m */,
+				CDF9B6EB1E5D8D8D00624D5F /* clock_time.png */,
 			);
 			name = Mian;
 			sourceTree = "<group>";
@@ -1338,6 +1346,7 @@
 				CDE4820C1E5C313200F72143 /* Info.plist in Resources */,
 				CD1E553E1E56F6330044B7E2 /* CommunityStoryboard.storyboard in Resources */,
 				CDE482061E5C312200F72143 /* Assets.xcassets in Resources */,
+				CDF9B6EC1E5D8D8D00624D5F /* clock_time.png in Resources */,
 				CDE4820F1E5C34D000F72143 /* LaunchScreen.storyboard in Resources */,
 				CDF9B6E11E5D32BE00624D5F /* sport_path.json in Resources */,
 				CD1E55381E56F5B20044B7E2 /* abc123.png in Resources */,
@@ -1408,6 +1417,7 @@
 				CDE481F01E5C2F2300F72143 /* TZImageManager.m in Sources */,
 				33F35EB21E4DB806000960EE /* SKMessageModel.m in Sources */,
 				0F6100AA1E502948008C7E7B /* SKSettingViewController.m in Sources */,
+				CDF9B6EF1E5D96E500624D5F /* UIView+Rotatable.m in Sources */,
 				CDE481D31E5C2EB800F72143 /* UIView+OnePixelLine.m in Sources */,
 				CDE482091E5C312200F72143 /* main.m in Sources */,
 				33CA66D71E557AE400727719 /* SKCityModel.m in Sources */,

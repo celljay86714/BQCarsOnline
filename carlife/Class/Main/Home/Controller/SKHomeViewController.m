@@ -37,6 +37,9 @@ static NSString *headID = @"homeHead";
     
     self.homeView.delegate = self;
     self.homeView.dataSource = self;
+    
+    [self.navigationController.navigationBar setShadowImage:[UIImage uxy_imageWithColor:[UIColor clearColor]  size:CGSizeMake(SCREEN_WIDTH, 0.5)]];
+
 }
 
 #pragma mark -- 懒加载
@@ -71,6 +74,8 @@ static NSString *headID = @"homeHead";
     CFWeakSelf(self);
     cell.clickItem = ^{
         if ([weakitemModel.controller isEqualToString:@"logout"]) {
+            DDLogInfo(@"popcontroller？？");
+            [self.tabBarController dismissViewControllerAnimated:YES completion:nil];
             
         }else{
             id obj = [[NSClassFromString(weakitemModel.controller) alloc] init];
@@ -84,6 +89,7 @@ static NSString *headID = @"homeHead";
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     SKHomeHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headID forIndexPath:indexPath];
+    [headerView setlayer];
     return headerView;
 }
 
