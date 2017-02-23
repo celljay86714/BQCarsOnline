@@ -18,8 +18,11 @@
     
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
     textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
-    textAttrs[NSFontAttributeName] = BOLDSYSTEMFONT(20);
+    textAttrs[NSFontAttributeName] = BOLDSYSTEMFONT(16);
     [self.navigationBar setTitleTextAttributes:textAttrs];
+    
+    //隐藏返回按钮的文字
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated

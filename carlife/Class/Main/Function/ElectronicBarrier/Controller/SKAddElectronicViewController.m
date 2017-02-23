@@ -7,20 +7,19 @@
 //
 
 #import "SKAddElectronicViewController.h"
+#import "SKElectronicMapViewController.h"
 
-@interface SKAddElectronicViewController ()
+@interface SKAddElectronicViewController ()<UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *barrierNameField;
+@property (weak, nonatomic) IBOutlet UITextField *barrierLongitudeField;
+@property (weak, nonatomic) IBOutlet UITextField *barrierLatitudeField;
+@property (weak, nonatomic) IBOutlet UITextField *barrierRadiusField;
+
+@property (nonatomic, strong) UIStoryboard *sb;
 @end
 
 @implementation SKAddElectronicViewController
-
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        
-    }
-    return self;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +28,28 @@
     [saveBt setBackgroundImage:[UIImage imageNamed:@"save"] forState:UIControlStateNormal];
     [saveBt sizeToFit];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:saveBt];
-    // Do any additional setup after loading the view.
+    
+    [self setFields];
+}
+
+- (void)setFields
+{
+    self.barrierLongitudeField.delegate = self;
+    self.barrierLatitudeField.delegate = self;
+    self.barrierRadiusField.delegate = self;
+}
+
+- (void)didClickField
+{
+    SKElectronicMapViewController *addC = (SKElectronicMapViewController *)[self.sb instantiateViewControllerWithIdentifier:@"BarrierMap"];
+    [self.navigationController pushViewController:addC animated:YES];
+}
+
+#pragma mark -- UITextField代理
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    [self didClickField];
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,5 +57,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -- 懒加载
+- (UIStoryboard *)sb
+{
+    if (!_sb) {
+        _sb = [UIStoryboard storyboardWithName:@"ElecBarrier" bundle:[NSBundle mainBundle]];
+    }
+    return _sb;
+}
 
 @end
