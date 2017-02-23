@@ -19,7 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view = self.loginView;
+    
+    UIImageView *imageView =[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"login_bg"]];
+    [self.view addSubview:imageView];
+    
+    [imageView makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(0);
+    }];
+    [self.view addSubview:self.loginView];
+    [self.loginView makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(0);
+    }];
     self.view.backgroundColor = [UIColor whiteColor];
     
 

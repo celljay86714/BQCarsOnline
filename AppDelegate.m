@@ -38,9 +38,28 @@
     if (!ret) {
         NSLog(@"百度地图启动失败!");
     }
+    [self initializeUIAppearances];
     
     return YES;
 }
+
+- (void)initializeUIAppearances {
+    // UINavigationBar
+    [[UINavigationBar appearance] setTintColor:VKDefaultYellow];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage uxy_imageWithColor:UXYColorFromRGBA(39, 50, 54, 1) size:CGSizeMake(SCREEN_WIDTH, 64)] forBarMetrics:UIBarMetricsDefault];
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+        [[UINavigationBar appearance] setTranslucent:NO];
+    }
+    
+    // UITabBar
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:VKDefaultDescriptColor, NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:UXYColorFromRGBA(242, 151, 37, 1), NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

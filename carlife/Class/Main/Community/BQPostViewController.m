@@ -45,7 +45,6 @@
         }
     }];
     
-//    [self.tableView registerNib:[UINib nibWithNibName:SelectionItemCellIdentifier bundle:nil] forCellReuseIdentifier:SelectionItemCellIdentifier];
     _postContent.placeholder = @"说点什么...";
     
     
