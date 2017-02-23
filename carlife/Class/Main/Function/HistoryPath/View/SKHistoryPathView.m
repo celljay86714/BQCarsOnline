@@ -20,24 +20,22 @@
 @property (nonatomic, strong) UILabel *yesterdayLabel;
 @property (nonatomic, strong) UILabel *customLabel;
 
-@property (nonatomic, strong) UITextField *fromTextField;
-@property (nonatomic, strong) UITextField *toTextField;
-
 @end
 
 @implementation SKHistoryPathView
 
-static const CGFloat btwidth = 20;
+static const CGFloat btwidth = 30;
 static const CGFloat labelWidth = 80;
-static const CGFloat fontSize = 13;
-static const CGFloat textHeight = 30;
-static const CGFloat searchHeight = 36;
+static const CGFloat fontSize = 14;
+static const CGFloat textHeight = 40;
+static const CGFloat searchHeight = 40;
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
         [self setupSubviews];
         [self setSubviewAttributes];
+        [self didChooseTime:self.todayBt];
     }
     return self;
 }
@@ -60,30 +58,79 @@ static const CGFloat searchHeight = 36;
 {
     [self.contentView setBackgroundColor:[UIColor whiteColor]];
     [self.todayBt setBackgroundImage:[UIImage imageNamed:@"checkbox_on"] forState:UIControlStateNormal];
+    self.todayBt.tag = 1;
+    [self.todayBt addTarget:self action:@selector(didChooseTime:) forControlEvents:UIControlEventTouchUpInside];
     self.todayLabel.text = @"今天";
     [self.todayLabel setFont:[UIFont systemFontOfSize:fontSize]];
     
     [self.yesterdayBt setBackgroundImage:[UIImage imageNamed:@"checkbox_off"] forState:UIControlStateNormal];
+    self.yesterdayBt.tag = 2;
+    [self.yesterdayBt addTarget:self action:@selector(didChooseTime:) forControlEvents:UIControlEventTouchUpInside];
     self.yesterdayLabel.text = @"昨天";
     [self.yesterdayLabel setFont:[UIFont systemFontOfSize:fontSize]];
     
     [self.customBt setBackgroundImage:[UIImage imageNamed:@"checkbox_off"] forState:UIControlStateNormal];
+    self.customBt.tag = 3;
+    [self.customBt addTarget:self action:@selector(didChooseTime:) forControlEvents:UIControlEventTouchUpInside];
     self.customLabel.text = @"自定义";
     [self.customLabel setFont:[UIFont systemFontOfSize:fontSize]];
     
-    [self.fromTextField setPlaceholder:@"2017/02/15 00:00"];
-    [self.toTextField setPlaceholder:@"2017/02/15 09:10"];
     [self.fromTextField setTextAlignment:NSTextAlignmentCenter];
     [self.toTextField setTextAlignment:NSTextAlignmentCenter];
     [self.fromTextField setBorderStyle:UITextBorderStyleLine];
     [self.toTextField setBorderStyle:UITextBorderStyleLine];
-    [self.fromTextField setEnabled:NO];
-    [self.toTextField setEnabled:NO];
     
     [self.searchBt setTitle:@"搜索" forState:UIControlStateNormal];
     [self.searchBt setBackgroundColor:[UIColor orangeColor]];
     [self.searchBt.titleLabel setFont:[UIFont systemFontOfSize:15]];
     [self.searchBt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+}
+
+
+/**
+ 选择时间
+
+ @param button
+ */
+- (void)didChooseTime:(UIButton *)button
+{
+//    self.selectDate(button.tag);
+    [self.todayBt setBackgroundImage:[UIImage imageNamed:@"checkbox_off"] forState:UIControlStateNormal];
+    [self.yesterdayBt setBackgroundImage:[UIImage imageNamed:@"checkbox_off"] forState:UIControlStateNormal];
+    [self.customBt setBackgroundImage:[UIImage imageNamed:@"checkbox_off"] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"checkbox_on"] forState:UIControlStateNormal];
+    
+    NSDate *now = [NSDate date];
+    NSDate *yesterday = [NSDate dateWithTimeIntervalSinceNow:-60*60*24];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm";
+    NSString *nowStr = [formatter stringFromDate:now];
+    formatter.dateFormat = @"yyyy-MM-dd";
+    NSString *todayStr = [formatter stringFromDate:now];
+    NSString *tdStart = [NSString stringWithFormat:@"%@ 00:00",todayStr];
+    NSString *yesterdayStr = [formatter stringFromDate:yesterday];
+    NSString *ydStart = [NSString stringWithFormat:@"%@ 00:00",yesterdayStr];
+    NSString *ydEnd = [NSString stringWithFormat:@"%@ 23:59",yesterdayStr];
+    
+    switch (button.tag) {
+        case 1:
+            self.fromTextField.text = tdStart;
+            self.toTextField.text = nowStr;
+            [self.toTextField setEnabled:NO];
+            [self.fromTextField setEnabled:NO];
+            break;
+        case 2:
+            self.fromTextField.text = ydStart;
+            self.toTextField.text = ydEnd;
+            [self.toTextField setEnabled:NO];
+            [self.fromTextField setEnabled:NO];
+            break;
+            
+        default:
+            [self.toTextField setEnabled:YES];
+            [self.fromTextField setEnabled:YES];
+            break;
+    }
 }
 
 - (void)layoutSubviews

@@ -10,6 +10,18 @@
 
 @implementation SKNavigationController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationBar setTintColor:[UIColor orangeColor]];
+    
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textAttrs[NSFontAttributeName] = BOLDSYSTEMFONT(20);
+    [self.navigationBar setTitleTextAttributes:textAttrs];
+}
+
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if (self.viewControllers.count > 0) {
