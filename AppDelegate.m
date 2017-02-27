@@ -45,7 +45,7 @@
 
 - (void)initializeUIAppearances {
     // UINavigationBar
-    [[UINavigationBar appearance] setTintColor:VKDefaultYellow];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [[UINavigationBar appearance] setBackgroundImage:[UIImage uxy_imageWithColor:UXYColorFromRGBA(39, 50, 54, 1) size:CGSizeMake(SCREEN_WIDTH, 64)] forBarMetrics:UIBarMetricsDefault];
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
