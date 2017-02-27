@@ -132,7 +132,7 @@
                                     <constraint firstAttribute="width" constant="200" id="bKv-ii-MA7"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="半径2300m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rys-XJ-S3g">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="半径100m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rys-XJ-S3g">
                                 <rect key="frame" x="150" y="345" width="75" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.88411458330000003" green="0.0" blue="0.0082768646009999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -150,7 +150,7 @@
                                 <rect key="frame" x="325" y="568" width="30" height="39"/>
                                 <state key="normal" backgroundImage="zoomin_normal"/>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IwJ-bn-s4O">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="5000" translatesAutoresizingMaskIntoConstraints="NO" id="IwJ-bn-s4O">
                                 <rect key="frame" x="18" y="50" width="339" height="31"/>
                                 <color key="tintColor" red="0.99607843139999996" green="0.52549019610000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
@@ -182,6 +182,14 @@
                             <constraint firstItem="ltK-cV-5YG" firstAttribute="centerX" secondItem="PFs-5f-SeZ" secondAttribute="centerX" id="qDS-de-dRw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationTypeBt" destination="zeB-Ne-e7F" id="5sT-IA-hlJ"/>
+                        <outlet property="plusImageView" destination="2lz-AU-ACU" id="QEx-M2-sRg"/>
+                        <outlet property="radiusLabel" destination="Rys-XJ-S3g" id="a4m-tI-iBT"/>
+                        <outlet property="rangeSlider" destination="IwJ-bn-s4O" id="Qfb-Gq-3mr"/>
+                        <outlet property="zoomInBt" destination="ltK-cV-5YG" id="kVU-eM-ehc"/>
+                        <outlet property="zoomOutBt" destination="PFs-5f-SeZ" id="P0q-6z-1bD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LbF-yc-CZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,14 +13,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    /*
     [self.navigationBar setBarTintColor:[UIColor whiteColor]];
-    [self.navigationBar setTintColor:[UIColor orangeColor]];
+    [self.navigationBar setTintColor:[UIColor whiteColor]];
     
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     textAttrs[NSFontAttributeName] = BOLDSYSTEMFONT(16);
     [self.navigationBar setTitleTextAttributes:textAttrs];
-    
+    */
     //隐藏返回按钮的文字
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
 }
