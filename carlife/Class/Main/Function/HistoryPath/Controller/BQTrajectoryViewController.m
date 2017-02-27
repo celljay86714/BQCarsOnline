@@ -180,7 +180,6 @@
         BMKSportNode *node = [sportNodes firstObject];
         sportAnnotationView.imageView.transform = CGAffineTransformMakeRotation(node.angle);
         
-        
     }
     return sportAnnotationView;
 }
