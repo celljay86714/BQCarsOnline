@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Sky. All rights reserved.
 //
 
-#import <BaiduMapAPI_Map/BaiduMapAPI_Map.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
 
 @interface SKAnnotationView : BMKAnnotationView
 

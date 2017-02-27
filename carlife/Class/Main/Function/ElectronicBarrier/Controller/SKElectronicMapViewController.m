@@ -67,7 +67,7 @@
     NSLog(@"进入方向定位态");
     [self.locService startUserLocationService];
     self.mapView.showsUserLocation = NO;
-    self.mapView.userTrackingMode = BMKUserTrackingModeHeading;
+    self.mapView.userTrackingMode = BMKUserTrackingModeFollow;
     self.mapView.showsUserLocation = YES;
 }
 
