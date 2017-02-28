@@ -41,7 +41,7 @@
 #define Main_Screen_Bounds [[UIScreen mainScreen] bounds]
 
 //导航栏高度
-#define TopBarHeight 64.5
+#define TopBarHeight 64
 
 // 字体大小(常规/粗体)
 #define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:FONTSIZE]
