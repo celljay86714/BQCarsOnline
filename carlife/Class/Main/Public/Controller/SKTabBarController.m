@@ -69,10 +69,6 @@
     SKNavigationController *thirdNavigationController = [[SKNavigationController alloc]
                                                          initWithRootViewController:thirdViewController];
     
-    SKMessageCenterViewController *fourthViewController = [[SKMessageCenterViewController alloc] init];
-    SKNavigationController *fourthNavigationController = [[SKNavigationController alloc]
-                                                          initWithRootViewController:fourthViewController];
-    
     
     
    BQCommunityViewController *controller= [[UIStoryboard storyboardWithName:@"CommunityStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"BQCommunityViewController"];
@@ -89,7 +85,6 @@
                                  firstNavigationController,
                                  secondNavigationController,
                                  thirdNavigationController,
-                                 fourthNavigationController,
                                  commNavigationController
                                  ];
     return viewControllers;
@@ -112,11 +107,6 @@
                                                  CYLTabBarItemImage : @"main_tab_tracking_normal",
                                                  CYLTabBarItemSelectedImage : @"main_tab_tracking_selected",
                                                  };
-    NSDictionary *fourthTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"消息中心",
-                                                  CYLTabBarItemImage : @"main_tab_tracking_normal",
-                                                  CYLTabBarItemSelectedImage : @"main_tab_tracking_selected"
-                                                  };
     
     
     NSDictionary *communityTabBarItemsAttributes = @{
@@ -130,7 +120,6 @@
                                        firstTabBarItemsAttributes,
                                        secondTabBarItemsAttributes,
                                        thirdTabBarItemsAttributes,
-                                       fourthTabBarItemsAttributes,
                                        communityTabBarItemsAttributes
                                        ];
     return tabBarItemsAttributes;

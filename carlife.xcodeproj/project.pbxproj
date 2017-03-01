@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0F6100AA1E502948008C7E7B /* SKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6100A91E502948008C7E7B /* SKSettingViewController.m */; };
 		0F6100AF1E509059008C7E7B /* SKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6100AE1E509059008C7E7B /* SKAlertViewController.m */; };
-		0F6100B11E5091A3008C7E7B /* alertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F6100B01E5091A3008C7E7B /* alertView.storyboard */; };
-		0F6100B41E509A3F008C7E7B /* SKAlertViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6100B31E509A3F008C7E7B /* SKAlertViewCell.m */; };
 		331357711E5DB1CF00C2AF76 /* ElecBarrier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331357701E5DB1CF00C2AF76 /* ElecBarrier.storyboard */; };
 		331357741E5DB52F00C2AF76 /* SKAddElectronicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331357731E5DB52F00C2AF76 /* SKAddElectronicViewController.m */; };
 		3314FC471E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3314FC461E28AAD500DDCDB3 /* GVUserDefaults+SKProperties.m */; };
@@ -45,6 +43,8 @@
 		33ECEBAE1E275D5B00AEEDEC /* SKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ECEBAD1E275D5B00AEEDEC /* SKTabBarController.m */; };
 		33F35EAF1E4DAFEF000960EE /* SKMessageCenterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F35EAE1E4DAFEF000960EE /* SKMessageCenterViewCell.m */; };
 		33F35EB21E4DB806000960EE /* SKMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F35EB11E4DB806000960EE /* SKMessageModel.m */; };
+		33FC996D1E66669F00E64093 /* SKSettingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FC996C1E66669F00E64093 /* SKSettingView.storyboard */; };
+		33FC99701E6678F000E64093 /* SKAlertSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FC996F1E6678F000E64093 /* SKAlertSettingViewController.m */; };
 		33FDEC191E25DA4A006CCC94 /* SKLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDEC181E25DA4A006CCC94 /* SKLoginView.m */; };
 		33FDEC271E2634B6006CCC94 /* SKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDEC261E2634B6006CCC94 /* SKBaseViewController.m */; };
 		477960AEACD4FE5EEF077AA7 /* libPods-carlife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C87C88D957E9042FD712ABC1 /* libPods-carlife.a */; };
@@ -106,9 +106,6 @@
 		0F6100A91E502948008C7E7B /* SKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSettingViewController.m; sourceTree = "<group>"; };
 		0F6100AD1E509059008C7E7B /* SKAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAlertViewController.h; sourceTree = "<group>"; };
 		0F6100AE1E509059008C7E7B /* SKAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAlertViewController.m; sourceTree = "<group>"; };
-		0F6100B01E5091A3008C7E7B /* alertView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = alertView.storyboard; sourceTree = "<group>"; };
-		0F6100B21E509A3F008C7E7B /* SKAlertViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAlertViewCell.h; sourceTree = "<group>"; };
-		0F6100B31E509A3F008C7E7B /* SKAlertViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAlertViewCell.m; sourceTree = "<group>"; };
 		329C7A16C5C684AE80C86B90 /* Pods-carlife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carlife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-carlife/Pods-carlife.debug.xcconfig"; sourceTree = "<group>"; };
 		331357701E5DB1CF00C2AF76 /* ElecBarrier.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ElecBarrier.storyboard; sourceTree = "<group>"; };
 		331357721E5DB52F00C2AF76 /* SKAddElectronicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAddElectronicViewController.h; sourceTree = "<group>"; };
@@ -180,6 +177,9 @@
 		33F35EAE1E4DAFEF000960EE /* SKMessageCenterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMessageCenterViewCell.m; sourceTree = "<group>"; };
 		33F35EB01E4DB806000960EE /* SKMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMessageModel.h; sourceTree = "<group>"; };
 		33F35EB11E4DB806000960EE /* SKMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMessageModel.m; sourceTree = "<group>"; };
+		33FC996C1E66669F00E64093 /* SKSettingView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SKSettingView.storyboard; sourceTree = "<group>"; };
+		33FC996E1E6678F000E64093 /* SKAlertSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAlertSettingViewController.h; sourceTree = "<group>"; };
+		33FC996F1E6678F000E64093 /* SKAlertSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAlertSettingViewController.m; sourceTree = "<group>"; };
 		33FDEC171E25DA4A006CCC94 /* SKLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKLoginView.h; sourceTree = "<group>"; };
 		33FDEC181E25DA4A006CCC94 /* SKLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLoginView.m; sourceTree = "<group>"; };
 		33FDEC251E2634B6006CCC94 /* SKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKBaseViewController.h; sourceTree = "<group>"; };
@@ -458,7 +458,6 @@
 			isa = PBXGroup;
 			children = (
 				33B6EF551E24BFBE008A77AC /* Alert */,
-				33B6EF591E24BFBE008A77AC /* DeviceMessage */,
 				33B6EF5D1E24BFBE008A77AC /* ElectronicBarrier */,
 				33B6EF611E24BFBE008A77AC /* HistoryPath */,
 				33B6EF651E24BFBE008A77AC /* Logout */,
@@ -467,7 +466,6 @@
 				33B6EF711E24BFBE008A77AC /* RealTimeLocation */,
 				33B6EF751E24BFBE008A77AC /* SendMessage */,
 				33B6EF791E24BFBE008A77AC /* Setting */,
-				33B6EF7D1E24BFBE008A77AC /* UserInfo */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -499,40 +497,6 @@
 			sourceTree = "<group>";
 		};
 		33B6EF581E24BFBE008A77AC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0F6100B01E5091A3008C7E7B /* alertView.storyboard */,
-				0F6100B21E509A3F008C7E7B /* SKAlertViewCell.h */,
-				0F6100B31E509A3F008C7E7B /* SKAlertViewCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		33B6EF591E24BFBE008A77AC /* DeviceMessage */ = {
-			isa = PBXGroup;
-			children = (
-				33B6EF5A1E24BFBE008A77AC /* Controller */,
-				33B6EF5B1E24BFBE008A77AC /* Model */,
-				33B6EF5C1E24BFBE008A77AC /* View */,
-			);
-			path = DeviceMessage;
-			sourceTree = "<group>";
-		};
-		33B6EF5A1E24BFBE008A77AC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		33B6EF5B1E24BFBE008A77AC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		33B6EF5C1E24BFBE008A77AC /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -810,6 +774,8 @@
 			children = (
 				0F6100A81E502948008C7E7B /* SKSettingViewController.h */,
 				0F6100A91E502948008C7E7B /* SKSettingViewController.m */,
+				33FC996E1E6678F000E64093 /* SKAlertSettingViewController.h */,
+				33FC996F1E6678F000E64093 /* SKAlertSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -824,37 +790,7 @@
 		33B6EF7C1E24BFBE008A77AC /* View */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		33B6EF7D1E24BFBE008A77AC /* UserInfo */ = {
-			isa = PBXGroup;
-			children = (
-				33B6EF7E1E24BFBE008A77AC /* Controller */,
-				33B6EF7F1E24BFBE008A77AC /* Model */,
-				33B6EF801E24BFBE008A77AC /* View */,
-			);
-			path = UserInfo;
-			sourceTree = "<group>";
-		};
-		33B6EF7E1E24BFBE008A77AC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		33B6EF7F1E24BFBE008A77AC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		33B6EF801E24BFBE008A77AC /* View */ = {
-			isa = PBXGroup;
-			children = (
+				33FC996C1E66669F00E64093 /* SKSettingView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1340,9 +1276,9 @@
 				331357711E5DB1CF00C2AF76 /* ElecBarrier.storyboard in Resources */,
 				CDF9B6E61E5D388E00624D5F /* sportarrow.png in Resources */,
 				CD1E553C1E56F5B20044B7E2 /* tableViewcell.xib in Resources */,
-				0F6100B11E5091A3008C7E7B /* alertView.storyboard in Resources */,
 				CDE481F11E5C2F2300F72143 /* TZImagePickerController.bundle in Resources */,
 				CDE4820C1E5C313200F72143 /* Info.plist in Resources */,
+				33FC996D1E66669F00E64093 /* SKSettingView.storyboard in Resources */,
 				CD1E553E1E56F6330044B7E2 /* CommunityStoryboard.storyboard in Resources */,
 				CDE482061E5C312200F72143 /* Assets.xcassets in Resources */,
 				CDF9B6EC1E5D8D8D00624D5F /* clock_time.png in Resources */,
@@ -1411,7 +1347,7 @@
 				331E5A9F1E4C595B0022B83B /* SKHomeViewCell.m in Sources */,
 				CDE481FB1E5C2F6E00F72143 /* VKCategory.m in Sources */,
 				331E5A9C1E4C0D7D0022B83B /* SKHomeModel.m in Sources */,
-				0F6100B41E509A3F008C7E7B /* SKAlertViewCell.m in Sources */,
+				33FC99701E6678F000E64093 /* SKAlertSettingViewController.m in Sources */,
 				33CA66CE1E5455FF00727719 /* SKOfflineMapView.m in Sources */,
 				CDE481F01E5C2F2300F72143 /* TZImageManager.m in Sources */,
 				33F35EB21E4DB806000960EE /* SKMessageModel.m in Sources */,
