@@ -14,15 +14,9 @@
 
 @implementation SKAlertViewController
 
-- (instancetype)init
-{
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"alertView" bundle:[NSBundle mainBundle]];
-    return [sb instantiateViewControllerWithIdentifier:@"alert"];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationItem.title = @"报警提醒";
 }
 
 - (void)didReceiveMemoryWarning {

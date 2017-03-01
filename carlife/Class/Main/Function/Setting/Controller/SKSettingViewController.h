@@ -8,6 +8,6 @@
 
 #import "SKBaseViewController.h"
 
-@interface SKSettingViewController : SKBaseViewController
+@interface SKSettingViewController : UITableViewController
 
 @end
