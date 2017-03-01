@@ -86,6 +86,7 @@
 		CDE482181E5C37E500F72143 /* UIBarButtonItem+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE482171E5C37E500F72143 /* UIBarButtonItem+Additional.m */; };
 		CDE4821E1E5C39B900F72143 /* BQPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE4821D1E5C39B900F72143 /* BQPostViewController.m */; };
 		CDE482211E5C3A5200F72143 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE482201E5C3A5200F72143 /* UIPlaceHolderTextView.m */; };
+		CDE69C191E641BA70061021E /* BQGlobalDaoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE69C181E641BA70061021E /* BQGlobalDaoModel.m */; };
 		CDEFC15E1E5A868E00472FA8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC15D1E5A868E00472FA8 /* CoreText.framework */; };
 		CDEFC1601E5A869600472FA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC15F1E5A869600472FA8 /* QuartzCore.framework */; };
 		CDEFC1621E5A869D00472FA8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEFC1611E5A869D00472FA8 /* Accelerate.framework */; };
@@ -256,6 +257,8 @@
 		CDE4821D1E5C39B900F72143 /* BQPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQPostViewController.m; sourceTree = "<group>"; };
 		CDE4821F1E5C3A5200F72143 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		CDE482201E5C3A5200F72143 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		CDE69C171E641BA70061021E /* BQGlobalDaoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BQGlobalDaoModel.h; sourceTree = "<group>"; };
+		CDE69C181E641BA70061021E /* BQGlobalDaoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BQGlobalDaoModel.m; sourceTree = "<group>"; };
 		CDEFC15D1E5A868E00472FA8 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		CDEFC15F1E5A869600472FA8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CDEFC1611E5A869D00472FA8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -407,6 +410,7 @@
 		33B6EF4F1E24BFBE008A77AC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CDE69C161E641B7F0061021E /* GlobalDao */,
 				CD1E552D1E56F5B20044B7E2 /* Community */,
 				33C4FF2B1E272175009283D9 /* Logger */,
 				33FDEC1A1E263337006CCC94 /* Base */,
@@ -1205,6 +1209,15 @@
 			path = Config;
 			sourceTree = SOURCE_ROOT;
 		};
+		CDE69C161E641B7F0061021E /* GlobalDao */ = {
+			isa = PBXGroup;
+			children = (
+				CDE69C171E641BA70061021E /* BQGlobalDaoModel.h */,
+				CDE69C181E641BA70061021E /* BQGlobalDaoModel.m */,
+			);
+			path = GlobalDao;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1390,6 +1403,7 @@
 				335F27C21E5E8AA0007E9476 /* SKElectronicMapViewController.m in Sources */,
 				CD1E55391E56F5B20044B7E2 /* BQCommunityViewController.m in Sources */,
 				CDA3239C1E5BCB5E005095F7 /* IDMCaptionView.m in Sources */,
+				CDE69C191E641BA70061021E /* BQGlobalDaoModel.m in Sources */,
 				CDE481F71E5C2F2300F72143 /* UIView+Layout.m in Sources */,
 				CDA323A11E5BCB5E005095F7 /* IDMTapDetectingImageView.m in Sources */,
 				CDEFC28D1E5AE5A700472FA8 /* BQInputView.m in Sources */,

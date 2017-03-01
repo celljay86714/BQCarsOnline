@@ -30,6 +30,8 @@
 #import "ProprietorMacro.h"
 #import "UIBarButtonItem+Additional.h"
 #import "VKCategory.h"
+#import <BaiduMapAPI_Map/BMKAnnotation.h>
+#import "BQGlobalDaoModel.h"
 
 
 #endif /* PrefixHeader_pch */

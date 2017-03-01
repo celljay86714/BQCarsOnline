@@ -39,7 +39,20 @@ static NSString *headID = @"homeHead";
     self.homeView.dataSource = self;
     
     [self.navigationController.navigationBar setShadowImage:[UIImage uxy_imageWithColor:[UIColor clearColor]  size:CGSizeMake(SCREEN_WIDTH, 0.5)]];
+    
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"changeUser" object:nil] subscribeNext:^(id x) {
+        
+        self.title = [BQGlobalDaoModel sharedInstance].title;
+        
+        [SVProgressHUD showInfoWithStatus:@"切换中..."];
 
+    }];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
 }
 
 #pragma mark -- 懒加载

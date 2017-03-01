@@ -10,4 +10,8 @@
 
 @interface SKDeviceListViewController : SKBaseViewController
 
+@property (nonatomic, strong) UITableView *allTableView;
+@property (nonatomic, strong) UITableView *onlineTableView;
+@property (nonatomic, strong) UITableView *offTableView;
+
 @end
