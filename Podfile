@@ -31,5 +31,7 @@ pod 'XYQuick','~> 0.6.8'
 pod 'DACircularProgress','~> 2.3.1'
 pod 'pop','~> 1.0.7'
 pod 'FDStackView', '~> 1.0'
+pod 'UIViewController+Swizzled', '~> 1.2’
+
 
 end

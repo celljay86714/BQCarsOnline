@@ -116,9 +116,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"CommunityTableViewCell";
     CommunityTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
     return cell;
 }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -133,7 +133,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPat
 {
-    return 315;
+    return 301;
 }
 
 /**

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIViewController+Swizzled.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // 添加DDTTYLogger，你的日志语句将被发送到Xcode控制台
+    SWIZZ_IT;
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
     
@@ -57,7 +59,9 @@
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:UXYColorFromRGBA(242, 151, 37, 1), NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-
+    
+    
+    //
 }
 
 
