@@ -11,6 +11,8 @@
 @interface SKRealTimeLocationViewController ()
 
 @property (nonatomic, strong) BMKPolyline *polyline;
+@property (nonatomic, strong) BMKAnnotationView *annotationView;
+@property (nonatomic, strong) BMKPointAnnotation *pointAnnotation;
 
 @end
 
@@ -61,15 +63,89 @@
 }
 
 //两点划线
-- (void)lineWithUserLocation:(BMKUserLocation *)userLocation
+- (void)lineWith:(CLLocationCoordinate2D)coor UserLocation:(BMKUserLocation *)userLocation
 {
-    CLLocationCoordinate2D coor[2] = {0};
-    coor[0].latitude = userLocation.location.coordinate.latitude;
-    coor[0].longitude = userLocation.location.coordinate.longitude;
-    coor[1].latitude = 43.84038;
-    coor[1].longitude = 87.564988;
-    self.polyline = [BMKPolyline polylineWithCoordinates:coor count:2];
+    CLLocationCoordinate2D coors[2] = {userLocation.location.coordinate,coor};
+    self.polyline = [BMKPolyline polylineWithCoordinates:coors count:2];
     [self.mapView addOverlay:self.polyline];
+}
+
+#pragma mark -- mapview代理
+- (void)mapViewDidFinishLoading:(BMKMapView *)mapView
+{
+    CLLocationCoordinate2D coor = CLLocationCoordinate2DMake(43.84038, 87.564988);
+    [mapView setCenterCoordinate:coor animated:NO];
+    self.pointAnnotation.coordinate = coor;
+    [mapView addAnnotation:self.pointAnnotation];
+
+    [self startLocation];
+}
+- (BMKOverlayView *)mapView:(BMKMapView *)mapView viewForOverlay:(id<BMKOverlay>)overlay
+{
+    if ([overlay isKindOfClass:[BMKPolyline class]]) {
+        BMKPolylineView *polylineView = [[BMKPolylineView alloc] initWithOverlay:overlay];
+        polylineView.strokeColor = [[UIColor greenColor] colorWithAlphaComponent:1];
+        polylineView.lineWidth = 2;
+        return polylineView;
+    }
+    return nil;
+}
+- (BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id<BMKAnnotation>)annotation
+{
+    if (!self.annotationView) {
+        self.annotationView = [[BMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"anonationID"];
+        //直接显示,不用点击弹出
+        [self.annotationView setSelected:YES animated:NO];
+        self.annotationView.image = [UIImage imageNamed:@"online_315"];
+        [self.annotationView setBounds:CGRectMake(0, 0, 20, 20)];
+        UIView *popView = [[[NSBundle mainBundle] loadNibNamed:@"PopView" owner:nil options:nil] lastObject];
+        popView.backgroundColor = [UIColor clearColor];
+        BMKActionPaopaoView *paopaoView = [[BMKActionPaopaoView alloc] initWithCustomView:popView];
+        self.annotationView.paopaoView = paopaoView;
+        
+        //中心偏移量归零
+        [self.annotationView setCenterOffset:CGPointZero];
+    }
+    return self.annotationView;
+}
+//气泡不消失
+- (void)mapView:(BMKMapView *)mapView didDeselectAnnotationView:(BMKAnnotationView *)view
+{
+    [mapView selectAnnotation:view.annotation animated:NO];
+}
+
+#pragma mark -- BMKLocation代理
+- (void)willStartLocatingUser
+{
+    
+}
+- (void)didStopLocatingUser
+{
+    
+}
+- (void)didFailToLocateUserWithError:(NSError *)error
+{
+    
+}
+//处理方向变更信息
+- (void)didUpdateUserHeading:(BMKUserLocation *)userLocation
+{
+    [_mapView updateLocationData:userLocation];
+}
+//处理位置坐标更新
+- (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation
+{
+    [_mapView updateLocationData:userLocation];
+    //87.564988,43.84038
+    CLLocationCoordinate2D coor = CLLocationCoordinate2DMake(43.84038, 87.564988);
+    [self.mapView setCenterCoordinate:coor animated:YES];
+    [self lineWith:coor UserLocation:userLocation];
+}
+
+- (void)dealloc {
+    if (_mapView) {
+        _mapView = nil;
+    }
 }
 
 #pragma mark -- 懒加载
@@ -104,55 +180,12 @@
     }
     return _polyline;
 }
-
-#pragma mark -- mapview代理
-- (void)mapViewDidFinishLoading:(BMKMapView *)mapView
+- (BMKPointAnnotation *)pointAnnotation
 {
-    [self startLocation];
-}
-- (BMKOverlayView *)mapView:(BMKMapView *)mapView viewForOverlay:(id<BMKOverlay>)overlay
-{
-    if ([overlay isKindOfClass:[BMKPolyline class]]) {
-        BMKPolylineView *polylineView = [[BMKPolylineView alloc] initWithOverlay:overlay];
-        polylineView.strokeColor = [[UIColor greenColor] colorWithAlphaComponent:1];
-        polylineView.lineWidth = 3;
-        return polylineView;
+    if (!_pointAnnotation) {
+        _pointAnnotation = [[BMKPointAnnotation alloc] init];
     }
-    return nil;
-}
-
-#pragma mark -- BMKLocation代理
-- (void)willStartLocatingUser
-{
-    
-}
-- (void)didStopLocatingUser
-{
-    
-}
-- (void)didFailToLocateUserWithError:(NSError *)error
-{
-    
-}
-//处理方向变更信息
-- (void)didUpdateUserHeading:(BMKUserLocation *)userLocation
-{
-    [_mapView updateLocationData:userLocation];
-}
-//处理位置坐标更新
-- (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation
-{
-    [_mapView updateLocationData:userLocation];
-    //87.564988,43.84038
-    [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake(43.84038, 87.564988) animated:YES];
-    [self lineWithUserLocation:userLocation];
-}
-
-
-- (void)dealloc {
-    if (_mapView) {
-        _mapView = nil;
-    }
+    return _pointAnnotation;
 }
 
 @end

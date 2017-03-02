@@ -118,8 +118,9 @@
     if (!self.annotationView) {
         self.annotationView = [[BMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"anonationID"];
         //直接显示,不用点击弹出
-        [self.annotationView setSelected:YES];
+        [self.annotationView setSelected:YES animated:NO];
         self.annotationView.image = [UIImage imageNamed:@"online_0"];
+        [self.annotationView setBounds:CGRectMake(0, 0, 20, 20)];
         UIView *popView = [[[NSBundle mainBundle] loadNibNamed:@"PopView" owner:nil options:nil] lastObject];
         popView.backgroundColor = [UIColor clearColor];
         BMKActionPaopaoView *paopaoView = [[BMKActionPaopaoView alloc] initWithCustomView:popView];
@@ -129,6 +130,11 @@
         [self.annotationView setCenterOffset:CGPointZero];
     }
     return self.annotationView;
+}
+//气泡不消失
+- (void)mapView:(BMKMapView *)mapView didDeselectAnnotationView:(BMKAnnotationView *)view
+{
+    [mapView selectAnnotation:view.annotation animated:NO];
 }
 - (void)mapStatusDidChanged:(BMKMapView *)mapView
 {
