@@ -13,7 +13,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"监控中心";
+    self.navigationItem.title = @"监控中心";
 }
 
 @end
